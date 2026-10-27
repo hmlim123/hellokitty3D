@@ -36,7 +36,7 @@ root=control('CTRL_Root',(0,0,.43))
 body=control('CTRL_Body',(0,0,1.4),root)
 head=control('CTRL_Head',(0,0,2.5),body)
 flower=control('CTRL_Bouquet',(0,-1.1,1.9),body)
-arms={i:control('CTRL_Arm_'+('L' if i<0 else 'R'),(i*.76,-.35,2.1),body) for i in [-1,1]}
+arms={i:control('CTRL_Arm_'+('L' if i<0 else 'R'),(i*.77,-.39,2.12),body) for i in [-1,1]}
 feet={i:control('CTRL_Foot_'+('L' if i<0 else 'R'),(i*.44,0,.72),root) for i in [-1,1]}
 bpy.context.view_layer.update()
 for o in list(bpy.data.collections['HELLO KITTY — editable parts'].objects):
@@ -56,15 +56,18 @@ for o in list(bpy.data.collections['HELLO KITTY — editable parts'].objects):
 # Closed-eye arc replaces the open oval for a wink.
 open_eye=bpy.data.objects['Eye right']
 data=bpy.data.curves.new('Closed wink arc','CURVE')
-data.dimensions='3D'; data.bevel_depth=.025; data.bevel_resolution=4
-sp=data.splines.new('BEZIER'); sp.bezier_points.add(2)
-for p,co in zip(sp.bezier_points,[(.52,-.972,3.27),(.63,-.993,3.32),(.74,-.972,3.27)]):
-    p.co=co; p.handle_left_type='AUTO'; p.handle_right_type='AUTO'
+data.dimensions='3D'; data.bevel_depth=.040; data.bevel_resolution=4
+sp=data.splines.new('BEZIER'); sp.bezier_points.add(6)
+for j,p in enumerate(sp.bezier_points):
+    t=math.pi*j/6
+    x=.63-.15*math.cos(t);z=3.23+.09*math.sin(t)
+    y=-1.04*math.sqrt(1-(x/1.55)**2-((z-3.4)/1.16)**2)-.025
+    p.co=(x,y,z);p.handle_left_type='AUTO';p.handle_right_type='AUTO'
 wink=bpy.data.objects.new('Wink — closed eye',data)
 bpy.data.collections['HELLO KITTY — editable parts'].objects.link(wink)
 data.materials.append(bpy.data.materials['Eyes and whiskers'])
 attach(wink,head)
-for f,closed in [(1,False),(78,False),(79,True),(87,True),(88,False),(144,False)]:
+for f,closed in [(1,False),(74,False),(75,True),(91,True),(92,False),(144,False)]:
     open_eye.hide_render=closed; open_eye.hide_viewport=closed
     wink.hide_render=not closed; wink.hide_viewport=not closed
     for o in [open_eye,wink]:
@@ -81,7 +84,7 @@ def key(o,f,offset=(0,0,0),rot=(0,0,0),scale=(1,1,1)):
 # Repeated, gentle bounce with side-to-side dance turns; rest pose loops cleanly.
 for f in range(1,146,12):
     t=(f-1)/12
-    lift=.14 if int(t)%2 else 0
+    lift=.085 if int(t)%2 else 0
     sway=math.sin(t*math.pi/2)
     key(root,min(f,144),(.055*sway,0,lift),(0,.045*sway,.10*sway))
     key(body,min(f,144),rot=(0,-.045*sway,0),scale=(1.015,1.015,.985) if lift==0 and f not in [1,145] else (1,1,1))
@@ -95,12 +98,12 @@ for f,tilt in [(1,0),(24,-.07),(48,.07),(66,-.11),(82,-.14),(96,0),(116,.10),(13
 for i,o in arms.items():
     key(o,1);key(o,48)
     if i<0:
-        for f,a in [(60,2.35),(66,2.65),(72,2.30),(78,2.65),(84,2.35)]:
-            key(o,f,(-.12,0,.35),(0,a,0))
+        for f,a in [(60,2.35),(66,2.85),(72,2.35),(78,2.85),(84,2.35)]:
+            key(o,f,rot=(0,a,0))
     key(o,96)
-    key(o,112,(0,-.27,.12),(-.12,0,0)); key(o,124,(0,-.27,.12),(-.12,0,0))
+    key(o,112,rot=(-.42,0,0)); key(o,124,rot=(-.42,0,0))
     key(o,138);key(o,144)
-for f,off in [(1,(0,0,0)),(96,(0,0,0)),(112,(0,-.27,.12)),(124,(0,-.27,.12)),(138,(0,0,0)),(144,(0,0,0))]:
+for f,off in [(1,(0,0,0)),(96,(0,0,0)),(112,(0,-.10,.19)),(124,(0,-.10,.19)),(138,(0,0,0)),(144,(0,0,0))]:
     key(flower,f,off)
 for name,f in [('Bounce',1),('Dance',25),('Wave',60),('Wink',79),('Offer flowers',112),('Loop end',144)]:
     s.timeline_markers.new(name,frame=f)
@@ -120,9 +123,9 @@ s.frame_set(82);assert wink.hide_render==False and open_eye.hide_render==True
 s.frame_set(1);assert wink.hide_render and not open_eye.hide_render
 print('ANIMATION_VALIDATED: hierarchy, keyed controls, wink and loop timeline')
 if '--preview' in sys.argv:
-    s.render.resolution_x=400; s.render.resolution_y=400
+    s.render.resolution_x=512; s.render.resolution_y=512
     s.eevee.taa_render_samples=8
-    s.frame_step=2
+    s.frame_step=1
 if '--render' in sys.argv:
     (OUT/'animation_frames').mkdir(exist_ok=True)
     bpy.ops.render.render(animation=True)

@@ -23,14 +23,27 @@ def material(name, color, roughness=.4):
     shader.inputs['Roughness'].default_value = roughness
     return m
 
-white = material('Warm porcelain white', (.98, .94, .85))
+white = material('Warm porcelain white', (1, .96, .89))
 red = material('Strawberry pink satin', (.83, .15, .28), .38)
 pink = material('Ribbon fold rose', (.52, .055, .12))
-black = material('Eyes and whiskers', (.035, .022, .012), .48)
+black = material('Eyes and whiskers', (.008, .004, .006), 1)
+# Printed ink eyes and whiskers: dark even under bright lights, with no shiny dots.
+ink = black.node_tree.nodes.get('Principled BSDF')
+ink.inputs['Specular IOR Level'].default_value = 0
+ink.inputs['Emission Color'].default_value = (.008, .004, .006, 1)
+ink.inputs['Emission Strength'].default_value = .7
 yellow = material('Golden yellow nose', (1, .58, .035), .3)
 base_mat = material('Rose ceramic pedestal', (.82, .39, .46), .45)
 edge_mat = material('Pedestal cream trim', (.95, .72, .56), .35)
-floor_mat = material('Blush studio', (.72, .37, .42), .8)
+floor_mat = material('Blush studio', (.95, .54, .66), .8)
+# Uniform luminous paper background: keep the top of the frame pastel, too.
+background_shader=floor_mat.node_tree.nodes.new('ShaderNodeEmission')
+background_shader.inputs['Color'].default_value=(.95,.38,.58,1)
+background_shader.inputs['Strength'].default_value=1
+floor_mat.node_tree.links.new(background_shader.outputs[0],floor_mat.node_tree.nodes.get('Material Output').inputs['Surface'])
+porcelain=white.node_tree.nodes.get('Principled BSDF')
+porcelain.inputs['Emission Color'].default_value=(1,.96,.89,1)
+porcelain.inputs['Emission Strength'].default_value=.20
 
 green = material('Fresh sage stems', (.16, .34, .17), .5)
 leaf_green = material('Soft green leaves', (.28, .48, .24), .5)
@@ -115,8 +128,26 @@ for p in head.data.polygons:
     p.use_smooth = True
 
 # Broad, low-set face leaves lots of soft forehead and cheek volume.
+# Thin, curved black patches follow the rounded cheek surface like printed eyes.
 for side in [-1, 1]:
-    ellipsoid('Eye left' if side < 0 else 'Eye right', (side*.63, -.946, 3.29), (.105, .06, .145), black)
+    cx=side*.63; cz=3.27
+    verts=[]
+    for radius in [0,.25,.5,.75,1]:
+        for j in range(64):
+            t=2*math.pi*j/64
+            x=cx+.119*radius*math.cos(t); z=cz+.172*radius*math.sin(t)
+            y=-1.04*math.sqrt(max(.01,1-(x/1.55)**2-((z-3.4)/1.16)**2))-.014
+            verts.append((x,y,z))
+    faces=[]
+    for ring in range(4):
+        for j in range(64):
+            a=ring*64+j;b=ring*64+(j+1)%64
+            faces.append((a,b,b+64,a+64))
+    mesh=bpy.data.meshes.new('Printed oval eye surface')
+    mesh.from_pydata(verts,[],faces);mesh.update()
+    o=bpy.data.objects.new('Eye left' if side<0 else 'Eye right',mesh)
+    character.objects.link(o);o.data.materials.append(black)
+    for poly in mesh.polygons:poly.use_smooth=True
 ellipsoid('Yellow oval nose', (0, -1.005, 3.06), (.15, .075, .103), yellow)
 for side in [-1, 1]:
     for i, (z, dz) in enumerate([(3.40, .06), (3.12, -.045), (2.87, -.15)]):
@@ -149,11 +180,24 @@ for poly in mesh.polygons:
 dress.modifiers.new('Soft tailored volume','SUBSURF').levels=2
 for side in [-1, 1]:
     ellipsoid(f'Foot {side}', (side*.44, -.24, .72), (.43, .59, .31), white)
-    arm=ellipsoid(f'White arm {side}', (side*.77, -.39, 1.94), (.30, .34, .48), white)
-    arm.rotation_euler[1]=side*.40
-    hand=ellipsoid(f'Mitten hand {side}', (side*.48, -.92, 1.79), (.37, .32, .31), white)
-    hand.rotation_euler[1]=side*-.38
-    ellipsoid(f'Thumb {side}', (side*.28, -1.02, 1.94), (.14, .16, .18), white)
+    pieces=[
+        ellipsoid('arm upper',(side*.77,-.39,2.03),(.24,.27,.32),white),
+        ellipsoid('arm elbow',(side*.76,-.63,1.85),(.25,.27,.24),white),
+        ellipsoid('mitten palm',(side*.59,-.84,1.84),(.27,.27,.29),white),
+        ellipsoid('soft thumb',(side*.40,-.87,1.98),(.12,.16,.15),white)]
+    bpy.ops.object.select_all(action='DESELECT')
+    for o in pieces:o.select_set(True)
+    bpy.context.view_layer.objects.active=pieces[0]
+    bpy.ops.object.join()
+    arm=bpy.context.object;arm.name=f'White arm {side}'
+    remesh=arm.modifiers.new('Continuous mitten silhouette','REMESH')
+    remesh.mode='VOXEL';remesh.voxel_size=.023
+    bpy.ops.object.modifier_apply(modifier=remesh.name)
+    soft=arm.modifiers.new('Soft mitten transitions','SMOOTH')
+    soft.factor=1;soft.iterations=10
+    bpy.ops.object.modifier_apply(modifier=soft.name)
+    arm.modifiers.new('Smooth mitten surface','SUBSURF').levels=1
+    for poly in arm.data.polygons:poly.use_smooth=True
     ellipsoid(f'Pink shoulder {side}', (side*.58, -.02, 2.20), (.27,.38,.25), red)
 
 # Chunky bow: two plump, diagonally arranged loops and a spherical central knot.
@@ -204,11 +248,12 @@ def aim(obj, point):
 
 
 for name, loc, power, size, color in [
-    ('Key softbox', (-4, -6, 8), 850, 5, (1, .87, .79)),
-    ('Fill softbox', (5, -3, 5), 650, 4, (.80, .88, 1)),
+    ('Key softbox', (-4, -6, 8), 1000, 5, (1, .91, .84)),
+    ('Fill softbox', (5, -3, 5), 950, 5, (1, .90, .94)),
     ('Rim softbox', (1, 4, 7), 1100, 3, (1, .65, .70))]:
     data = bpy.data.lights.new(name, 'AREA')
     data.energy = power
+    data.use_shadow = False  # Clean pastel illustration lighting: no stochastic shadow speckles.
     data.shape = 'DISK'
     data.size = size
     data.color = color
@@ -225,14 +270,25 @@ camera.data.type = 'ORTHO'
 camera.data.ortho_scale = 6.4
 scene = bpy.context.scene
 scene.camera = camera
-scene.render.engine = 'CYCLES'
-scene.cycles.samples = 128
-scene.cycles.use_denoising = False  # Cloud Blender has no OpenImageDenoise support.
+scene.render.engine = 'BLENDER_EEVEE_NEXT'
+scene.eevee.taa_render_samples = 32
+scene.eevee.use_raytracing = False
+scene.eevee.use_fast_gi = False
+scene.eevee.use_shadows = False
+# Deliberately shadow-free toy/postcard lighting avoids stochastic shadow dots.
+# A solid pastel oval underfoot keeps a grounded, vintage illustration look.
+shadow_mat=material('Warm pastel standing oval',(.72,.43,.40),1)
+bpy.ops.mesh.primitive_cylinder_add(vertices=128,radius=1,depth=.006,location=(0,0,.394))
+mat_obj=finish(bpy.context.object,'Pastel oval standing mat',shadow_mat,studio)
+mat_obj.scale=(1.18,.78,1)
+
 scene.render.resolution_x = 1000
 scene.render.resolution_y = 1000
 scene.render.resolution_percentage = 100
-scene.world.color = (.23, .23, .23)
+scene.world.color = (.55, .48, .45)
 scene.view_settings.view_transform = 'AgX'
+scene.view_settings.look = 'AgX - Medium Low Contrast'
+scene.view_settings.exposure = .45
 scene.render.image_settings.file_format = 'PNG'
 bpy.context.preferences.filepaths.save_version = 0
 scene.render.filepath = str(OUT / 'hello_kitty_preview.png')
