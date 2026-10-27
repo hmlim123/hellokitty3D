@@ -1,0 +1,4 @@
+# Local render sequence and Blender backup saves
+animation_frames/
+*.blend[0-9]
+__pycache__/
