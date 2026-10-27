@@ -183,8 +183,7 @@ for side in [-1, 1]:
     pieces=[
         ellipsoid('arm upper',(side*.77,-.39,2.03),(.24,.27,.32),white),
         ellipsoid('arm elbow',(side*.76,-.63,1.85),(.25,.27,.24),white),
-        ellipsoid('mitten palm',(side*.59,-.84,1.84),(.27,.27,.29),white),
-        ellipsoid('soft thumb',(side*.40,-.87,1.98),(.12,.16,.15),white)]
+        ellipsoid('mitten palm',(side*.59,-.84,1.84),(.26,.26,.30),white)]
     bpy.ops.object.select_all(action='DESELECT')
     for o in pieces:o.select_set(True)
     bpy.context.view_layer.objects.active=pieces[0]

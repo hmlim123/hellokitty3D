@@ -1,7 +1,7 @@
 # Hello Kitty — pastel postcard animation
 
 An editable Blender 4.3+ fan model with a plump pink bow and dress, daisy bouquet,
-flat black oval eyes, and softly fused mitten arms. Warm cream whites, bright
+flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whites, bright
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
@@ -15,7 +15,7 @@ see the scene's intended lighting, or choose **Render → Render Image**.
 
 The `ANIMATION` collection has named `CTRL_*` empties: root, body, head, two arms,
 two feet and bouquet. Keys are editable in the Dope Sheet/Graph Editor. The wave
-rotates a continuous mitten arm around its shoulder; it doesn't translate the arm
+raises a thumb-free rounded paw and rotates its continuous arm around the shoulder; it doesn't translate the arm
 away from the body. This is a rigid toy-style control rig, not a deforming skeletal
 rig or a watertight mesh prepared for 3D printing.
 
