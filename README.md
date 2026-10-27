@@ -1,7 +1,9 @@
 # Hello Kitty in Blender
 
-An editable, stylized fan model with a red bow and dress, a display pedestal,
-and a lit portrait scene. Made with Blender 4.3.2 using only built-in tools.
+An editable, stylized fan model with a plump strawberry-pink bow, a rounded pink dress,
+and a little pink-and-yellow daisy bouquet. The fuller cheeks, deeper head,
+round tummy, and mitten hands give the character a soft collectible-toy shape.
+Includes a display pedestal and a warm blush portrait scene. Made with Blender 4.3.2 using only built-in tools.
 No add-ons, external textures, accounts, or API keys are needed for modeling.
 
 ## Open on your Mac
@@ -12,7 +14,8 @@ view. Render with **Render → Render Image**. The character and studio are in
 separate collections; all character parts are named and editable. This is a
 static model, without an animation rig or a watertight 3D-print mesh.
 
-`hello_kitty_preview.png` shows the rendered scene.
+`hello_kitty_preview.png` shows the rendered portrait.
+`hello_kitty_three_quarter.png` shows the depth from another camera angle.
 
 ## Rebuild
 
@@ -34,12 +37,12 @@ Mac terminal, from the downloaded project directory:
 You can also open the Python file in Blender's Scripting workspace and run it
 in a fresh session to generate and save the scene without rendering.
 The cloud Blender build does not include OpenImageDenoise, so the generator
-uses 96 Cycles samples with denoising off. It works on the CPU.
+uses 128 Cycles samples with denoising off. It works on the CPU.
 
 No web server or background service is required. Cloud tasks already have an
 isolated checkout; use the existing checkout without creating a Git worktree.
 
 ## Privacy
 
-These files were generated locally and have not been pushed to GitHub.
 GitHub repository visibility is managed separately in repository settings.
+Do not change visibility or publish assets elsewhere without authorization.

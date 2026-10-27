@@ -23,14 +23,19 @@ def material(name, color, roughness=.4):
     shader.inputs['Roughness'].default_value = roughness
     return m
 
-white = material('Warm porcelain white', (.94, .91, .84))
-red = material('Cherry red satin', (.64, .018, .045), .28)
-pink = material('Bow seam highlight', (.90, .09, .16))
-black = material('Eyes and whiskers', (.009, .006, .012), .32)
+white = material('Warm porcelain white', (.98, .94, .85))
+red = material('Strawberry pink satin', (.83, .15, .28), .38)
+pink = material('Ribbon fold rose', (.52, .055, .12))
+black = material('Eyes and whiskers', (.035, .022, .012), .48)
 yellow = material('Golden yellow nose', (1, .58, .035), .3)
-base_mat = material('Rose ceramic pedestal', (.66, .24, .32), .32)
+base_mat = material('Rose ceramic pedestal', (.82, .39, .46), .45)
 edge_mat = material('Pedestal cream trim', (.95, .72, .56), .35)
-floor_mat = material('Blush studio', (.26, .095, .14), .7)
+floor_mat = material('Blush studio', (.72, .37, .42), .8)
+
+green = material('Fresh sage stems', (.16, .34, .17), .5)
+leaf_green = material('Soft green leaves', (.28, .48, .24), .5)
+flower_pink = material('Petal pink', (.98, .30, .45), .48)
+flower_yellow = material('Butter yellow petals', (1, .72, .12), .48)
 
 character = bpy.data.collections.new('HELLO KITTY — editable parts')
 bpy.context.scene.collection.children.link(character)
@@ -79,12 +84,12 @@ def curve(name, points, radius, mat):
     return obj
 
 # Soft triangular ears merge with the head into a single smooth sculpt.
-head = ellipsoid('Head', (0, 0, 3.18), (1.43, .77, 1.04), white)
+head = ellipsoid('Head', (0, 0, 3.40), (1.55, 1.04, 1.16), white)
 parts = [head]
 for side in [-1, 1]:
-    verts = [(side*.64, -.30, 3.90), (side*1.33, -.24, 3.76),
-             (side*1.14, -.13, 4.56), (side*.64, .28, 3.90),
-             (side*1.33, .25, 3.76), (side*1.14, .18, 4.56)]
+    verts = [(side*.70, -.53, 4.03), (side*1.47, -.44, 3.98),
+             (side*1.20, -.31, 4.83), (side*.70, .52, 4.03),
+             (side*1.47, .44, 3.98), (side*1.20, .29, 4.83)]
     mesh = bpy.data.meshes.new('Rounded triangular ear')
     mesh.from_pydata(verts, [], [(0, 2, 1), (3, 4, 5), (0, 1, 4, 3), (1, 2, 5, 4), (2, 0, 3, 5)])
     mesh.update()
@@ -102,53 +107,85 @@ remesh.voxel_size = .035
 bpy.ops.object.modifier_apply(modifier=remesh.name)
 smooth = head.modifiers.new('Soft sculpt surface', 'SMOOTH')
 smooth.factor = 1.1
-smooth.iterations = 6
+smooth.iterations = 14
 bpy.ops.object.modifier_apply(modifier=smooth.name)
 sub = head.modifiers.new('Silky surface', 'SUBSURF')
 sub.levels = 1
 for p in head.data.polygons:
     p.use_smooth = True
 
-# The face has the iconic two oval eyes, yellow nose, six whiskers and no mouth.
+# Broad, low-set face leaves lots of soft forehead and cheek volume.
 for side in [-1, 1]:
-    ellipsoid('Eye left' if side < 0 else 'Eye right', (side*.51, -.724, 3.25), (.105, .065, .145), black)
-ellipsoid('Yellow oval nose', (0, -.787, 3.02), (.145, .075, .098), yellow)
+    ellipsoid('Eye left' if side < 0 else 'Eye right', (side*.63, -.946, 3.29), (.105, .06, .145), black)
+ellipsoid('Yellow oval nose', (0, -1.005, 3.06), (.15, .075, .103), yellow)
 for side in [-1, 1]:
-    for i, (z, dz) in enumerate([(3.36, .14), (3.12, 0), (2.90, -.14)]):
-        curve(f'Whisker {side} / {i+1}', [(side*1.00, -.56, z), (side*1.36, -.58, z+dz*.5), (side*1.68, -.57, z+dz)], .027, black)
+    for i, (z, dz) in enumerate([(3.40, .06), (3.12, -.045), (2.87, -.15)]):
+        curve(f'Whisker {side} / {i+1}', [(side*1.26, -.58, z), (side*1.55, -.63, z+dz*.5), (side*1.83, -.61, z+dz)], .035, black)
 
-# Short body, rounded dress, little feet, white sleeves and mitten hands.
-ellipsoid('Body under dress', (0, .04, 1.69), (.66, .45, .82), white)
+# A full, softly rounded dress made from elliptical rings, closed at both ends.
+# More depth through the tummy and a rolled-under hem create a toy-like silhouette.
+rings = [(1.00,.83,.61),(1.04,.98,.72),(1.14,1.035,.77),
+         (1.30,1.01,.79),(1.55,.94,.78),(1.80,.82,.71),
+         (2.02,.71,.63),(2.22,.62,.53),(2.32,.48,.42)]
+verts = []
+for z, rx, ry in rings:
+    for j in range(96):
+        angle = 2*math.pi*j/96
+        verts.append((rx*math.cos(angle), .04+ry*math.sin(angle), z))
+faces = []
+for i in range(len(rings)-1):
+    for j in range(96):
+        a=i*96+j; b=i*96+(j+1)%96
+        faces.append((a,b,b+96,a+96))
+faces.extend([tuple(reversed(range(96))),tuple(range((len(rings)-1)*96,len(rings)*96))])
+mesh=bpy.data.meshes.new('Full rounded dress mesh')
+mesh.from_pydata(verts, [], faces)
+mesh.update()
+dress=bpy.data.objects.new('Strawberry pink rounded dress',mesh)
+character.objects.link(dress)
+dress.data.materials.append(red)
+for poly in mesh.polygons:
+    poly.use_smooth=True
+dress.modifiers.new('Soft tailored volume','SUBSURF').levels=2
 for side in [-1, 1]:
-    ellipsoid(f'Foot {side}', (side*.40, -.16, .68), (.38, .48, .27), white)
-    arm = ellipsoid(f'White arm {side}', (side*.77, -.01, 1.82), (.24, .25, .53), white)
-    arm.rotation_euler[1] = side * -.42
-    ellipsoid(f'Mitten hand {side}', (side*.95, -.06, 1.52), (.25, .27, .29), white)
-    ellipsoid(f'Thumb {side}', (side*.78, -.25, 1.57), (.12, .13, .17), white)
-bpy.ops.mesh.primitive_cone_add(vertices=96, radius1=.83, radius2=.49, depth=1.12, location=(0, .015, 1.51))
-dress = finish(bpy.context.object, 'Red A-line dress', red)
-dress.scale.y = .72
-bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
-bevel = dress.modifiers.new('Rounded dress hem and neckline', 'BEVEL')
-bevel.width = .14
-bevel.segments = 6
-dress.modifiers.new('Weighted dress normals', 'WEIGHTED_NORMAL')
-for side in [-1, 1]:
-    ellipsoid(f'Dress shoulder {side}', (side*.52, .015, 1.98), (.25, .30, .25), red)
-    ellipsoid(f'Dress button {side}', (side*.26, -.372, 1.95), (.05, .035, .05), yellow)
-# A small white collar tucked just beneath the head.
-for side in [-1, 1]:
-    collar = ellipsoid(f'Peter Pan collar {side}', (side*.19, -.37, 2.13), (.23, .08, .15), white)
-    collar.rotation_euler[1] = side * -.28
+    ellipsoid(f'Foot {side}', (side*.44, -.24, .72), (.43, .59, .31), white)
+    arm=ellipsoid(f'White arm {side}', (side*.77, -.39, 1.94), (.30, .34, .48), white)
+    arm.rotation_euler[1]=side*.40
+    hand=ellipsoid(f'Mitten hand {side}', (side*.48, -.92, 1.79), (.37, .32, .31), white)
+    hand.rotation_euler[1]=side*-.38
+    ellipsoid(f'Thumb {side}', (side*.28, -1.02, 1.94), (.14, .16, .18), white)
+    ellipsoid(f'Pink shoulder {side}', (side*.58, -.02, 2.20), (.27,.38,.25), red)
 
-# The red bow sits on Kitty's left ear (viewer's right).
+# Chunky bow: two plump, diagonally arranged loops and a spherical central knot.
 for side in [-1, 1]:
-    loop = ellipsoid(f'Bow loop {side}', (.86+side*.26, -.66, 3.99+side*.075), (.32, .15, .26), red)
-    loop.rotation_euler[1] = side * -.32
-    inset = ellipsoid(f'Bow folded ribbon {side}', (.86+side*.27, -.789, 3.99+side*.075), (.17, .024, .13), pink)
-    inset.rotation_euler[1] = side * -.32
-ellipsoid('Bow center knot', (.86, -.81, 3.99), (.17, .13, .185), red)
-ellipsoid('Small white tail', (0, .49, 1.17), (.19, .20, .19), white)
+    x=1.01+side*.30
+    z=4.27-side*.16
+    loop=ellipsoid(f'Bow loop {side}', (x, -.72, z), (.37,.29,.43), red)
+    loop.rotation_euler[1]=-.45
+    # Recess-colored folds, nestled against the knot, emphasize ribbon thickness.
+    fold=ellipsoid(f'Bow folded ribbon {side}', (1.01+side*.21, -.989, 4.27-side*.10), (.115,.027,.15), pink)
+    fold.rotation_euler[1]=-.45
+ellipsoid('Bow center knot', (1.01, -1.04, 4.27), (.25,.23,.25), red)
+ellipsoid('Small white tail', (0, .75, 1.28), (.24,.25,.24), white)
+
+# A little bouquet with dimensional petals, raised centers and curved stems.
+curve('Pink flower stem', [(-.22,-1.13,1.04),(-.12,-1.18,1.59),(-.30,-1.15,2.30)], .045, green)
+curve('Yellow flower stem', [(.21,-1.09,1.04),(.06,-1.16,1.60),(.31,-1.13,2.52)], .045, green)
+for name, cx, cy, cz, mat, radius in [
+    ('Pink daisy',-.33,-1.23,2.31,flower_pink,.27),
+    ('Yellow daisy',.29,-1.18,2.61,flower_yellow,.245)]:
+    for i in range(5):
+        angle=2*math.pi*i/5
+        obj=ellipsoid(f'{name} petal {i+1}',
+                      (cx+radius*math.sin(angle),cy,cz+radius*math.cos(angle)),
+                      (.18,.155,.245),mat)
+        obj.rotation_euler[1]=angle
+    ellipsoid(f'{name} center rim', (cx,cy-.125,cz),(.183,.075,.183),white if cx<0 else yellow)
+    ellipsoid(f'{name} golden center', (cx,cy-.185,cz),(.125,.07,.125),yellow)
+for side in [-1,1]:
+    leaf=ellipsoid(f'Bouquet leaf {side}', (side*.25,-1.12,1.86),(.30,.075,.13),leaf_green)
+    leaf.rotation_euler[1]=side*-.4
+    curve(f'Leaf vein {side}', [(side*.04,-1.20,1.79),(side*.24,-1.20,1.85),(side*.43,-1.16,1.94)], .014, green)
 
 # Circular display pedestal, seamless backdrop, and softbox lighting.
 for name, radius, depth, z, mat in [('Rose display plinth', 2.15, .30, .20, base_mat), ('Cream rim', 2.17, .055, .36, edge_mat)]:
@@ -179,17 +216,17 @@ for name, loc, power, size, color in [
     studio.objects.link(obj)
     obj.location = loc
     aim(obj, (0, 0, 2.2))
-bpy.ops.object.camera_add(location=(3.0, -13, 6.0))
+bpy.ops.object.camera_add(location=(2.8, -14, 6.0))
 camera = bpy.context.object
 camera.name = 'Portrait camera'
 organize(camera, studio)
-aim(camera, (0, 0, 2.25))
+aim(camera, (0, -.05, 2.45))
 camera.data.type = 'ORTHO'
-camera.data.ortho_scale = 6.35
+camera.data.ortho_scale = 6.4
 scene = bpy.context.scene
 scene.camera = camera
 scene.render.engine = 'CYCLES'
-scene.cycles.samples = 96
+scene.cycles.samples = 128
 scene.cycles.use_denoising = False  # Cloud Blender has no OpenImageDenoise support.
 scene.render.resolution_x = 1000
 scene.render.resolution_y = 1000
@@ -197,6 +234,7 @@ scene.render.resolution_percentage = 100
 scene.world.color = (.23, .23, .23)
 scene.view_settings.view_transform = 'AgX'
 scene.render.image_settings.file_format = 'PNG'
+bpy.context.preferences.filepaths.save_version = 0
 scene.render.filepath = str(OUT / 'hello_kitty_preview.png')
 # Open in an uncluttered material-colored viewport facing the character.
 bpy.ops.object.select_all(action='DESELECT')
