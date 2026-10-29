@@ -5,7 +5,29 @@ flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whit
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
-## Hawaiian plush — latest version
+## Hawaiian hula animation
+
+Open `hello_kitty_hawaiian_hula.blend` in Blender 4.3+ and press **Space**.
+The editable eight-second loop runs on frames 1–480 at 60 fps, with hip sways,
+gentle knee compression, shoulder-driven paw gestures, and 17 swaying skirt
+panels. Feet stay planted; frame 481 matches the loop's starting pose and velocity.
+[`hawaiian_hula_preview.png`](hawaiian_hula_preview.png) is a rendered pose preview.
+
+The detailed `FIBERS` collection is hidden in the viewport for faster playback
+and remains enabled for final renders. Use the named `CTRL_*` objects and Graph
+Editor to adjust the dance. **Ctrl-F12** renders PNG frames to `hula_frames/`
+beside the Blender file, at 1080 × 1350 with subtle motion blur.
+
+To regenerate from the approved static model:
+
+```sh
+blender -b hello_kitty_hawaiian_plush_v2.blend --threads 4 --python-exit-code 1 --python animate_hawaiian_hula.py
+```
+
+Outputs go to `hawaiian_hula/`; `KITTY_HULA_OUTPUT_DIR` overrides this directory.
+Add `-- --preview` to render a pose preview. Preserve edits before regenerating.
+
+## Hawaiian plush — latest static version
 
 Open `hello_kitty_hawaiian_plush_v2.blend` in Blender 4.3+. This is the approved
 Hawaiian plush model with rounded ears, a larger head, fuller body and feet,
