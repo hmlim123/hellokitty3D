@@ -5,7 +5,24 @@ flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whit
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
-## Open on your Mac
+## Hawaiian plush — latest version
+
+Open `hello_kitty_hawaiian_plush_v2.blend` in Blender 4.3+. This is the approved
+Hawaiian plush model with rounded ears, a larger head, fuller body and feet,
+a flower crown, pink shell top, and green felt skirt. The matching portrait is
+[`hawaiian_kitty_preview_v2.png`](hawaiian_kitty_preview_v2.png), at 1080 × 1350.
+
+Select the named `CTRL_*` objects to pose the head, body, and paws. This model is
+static; no animation is baked. Press **F12** to render, then choose **Image → Save
+As** to export a PNG for Higgsfield. Hide the `FIBERS` collection for faster viewport
+editing. Materials and geometry are self-contained; no add-ons are required.
+
+To regenerate this version, run `blender -b --threads 4 --python-exit-code 1
+--python create_hawaiian_kitty.py -- --render` from the repository directory.
+Outputs go to `hawaiian_output/`; set `KITTY_OUTPUT_DIR` to use another directory.
+The generator overwrites its outputs, so preserve any edits first.
+
+## Open the postcard animation on your Mac
 
 Open `hello_kitty_animated.blend` in Blender, move your pointer over the timeline,
 and press **Space**. Frames 1–144 form a six-second loop at 24 fps. Timeline markers
