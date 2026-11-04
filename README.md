@@ -60,7 +60,46 @@ reduces the character mesh, converts the wink to morph targets, and produces
 independent named clips. Preserve object/controller names when editing so the
 existing game events keep working. Game lighting is defined separately in Three.js.
 
-## Open on your Mac
+## Hawaiian hula animation
+
+Open `hello_kitty_hawaiian_hula.blend` in Blender 4.3+ and press **Space**.
+The editable eight-second loop runs on frames 1–480 at 60 fps, with hip sways,
+gentle knee compression, shoulder-driven paw gestures, and 17 swaying skirt
+panels. Feet stay planted; frame 481 matches the loop's starting pose and velocity.
+[`hawaiian_hula_preview.png`](hawaiian_hula_preview.png) is a rendered pose preview.
+
+The detailed `FIBERS` collection is hidden in the viewport for faster playback
+and remains enabled for final renders. Use the named `CTRL_*` objects and Graph
+Editor to adjust the dance. **Ctrl-F12** renders PNG frames to `hula_frames/`
+beside the Blender file, at 1080 × 1350 with subtle motion blur.
+
+To regenerate from the approved static model:
+
+```sh
+blender -b hello_kitty_hawaiian_plush_v2.blend --threads 4 --python-exit-code 1 --python animate_hawaiian_hula.py
+```
+
+Outputs go to `hawaiian_hula/`; `KITTY_HULA_OUTPUT_DIR` overrides this directory.
+Add `-- --preview` to render a pose preview. Preserve edits before regenerating.
+
+## Hawaiian plush — latest static version
+
+Open `hello_kitty_hawaiian_plush_v2.blend` in Blender 4.3+. This is the approved
+Hawaiian plush model with rounded ears, a larger head, fuller body and feet,
+a flower crown, pink shell top, and green felt skirt. The matching portrait is
+[`hawaiian_kitty_preview_v2.png`](hawaiian_kitty_preview_v2.png), at 1080 × 1350.
+
+Select the named `CTRL_*` objects to pose the head, body, and paws. This model is
+static; no animation is baked. Press **F12** to render, then choose **Image → Save
+As** to export a PNG for Higgsfield. Hide the `FIBERS` collection for faster viewport
+editing. Materials and geometry are self-contained; no add-ons are required.
+
+To regenerate this version, run `blender -b --threads 4 --python-exit-code 1
+--python create_hawaiian_kitty.py -- --render` from the repository directory.
+Outputs go to `hawaiian_output/`; set `KITTY_OUTPUT_DIR` to use another directory.
+The generator overwrites its outputs, so preserve any edits first.
+
+## Open the postcard animation on your Mac
 
 Open `hello_kitty_animated.blend` in Blender, move your pointer over the timeline,
 and press **Space**. Frames 1–144 form a six-second loop at 24 fps. Timeline markers
