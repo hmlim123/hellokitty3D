@@ -5,6 +5,61 @@ flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whit
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
+## Game edition · November 2026
+
+Open **`hello_kitty_game.blend`** for the game work. The original static and
+six-second animated files remain unchanged. This new file adds editable rigid
+performances, two friends, and ten prop assemblies (including three cutter
+shapes). All materials are self-contained; no add-ons or textures are required.
+
+| Named performance | Timeline at 24 fps | Game use |
+| --- | --- | --- |
+| Dance / Wave / Offer | 1–140 | Existing room buttons and flower offering |
+| Stir | 145–217 | Mixing dough |
+| Cut | 217–265 | Pressing Nancy's cutter |
+| Present | 265–313 | Holding her decorated cookie tray |
+| Surprise | 313–349 | Discovering an item |
+| Bow | 349–391 | A happy thank-you |
+| Celebrate | 391–451 | Completing a quest |
+| Sip | 451–511 | Lifting a teacup |
+
+Use timeline markers to find each performance. `CTRL_*` empties remain the
+editable toy controls; paws stay connected to their shoulder pivots. The
+`Socket_Paw_L/R`, `Socket_Teacup` and `Socket_Tray` empties are attachment points.
+The tray's midpoint uses two Copy Location constraints. These are rigid toy
+motions, not a deforming armature with finger articulation.
+
+- **GAME — friends:** Momo and Pip, each with a two-second greeting on frames
+  1–49. Select `Momo_Paw_L` or `Pip_Ear_L/R` to edit the keyed motions.
+- **GAME — cozy props:** cushion, frame, oven, tray, teacup, dough bowl, wooden
+  spoon, and round/heart/star cutters. Assemblies sit beside the character for
+  editing; the game centers each root when exporting.
+- **GAME — authoring preview:** held spoon, cutter, tray and cup appear during
+  the relevant timeline section. This preview is excluded from the web export.
+  Nancy's actual icing and sprinkles are composed by the browser game.
+
+Rebuild only the game edition from the original animated file:
+
+```sh
+blender -b hello_kitty_animated.blend --python-exit-code 1 --python create_game_assets.py
+```
+
+The command replaces `hello_kitty_game.blend`; save manual changes to a separate
+working copy first. To export your edited working copy from `hellokittygame`:
+
+```sh
+"/Applications/Blender.app/Contents/MacOS/Blender" \
+  -b ../hellokitty3D/hello_kitty_game.blend --python-exit-code 1 \
+  --python scripts/export_blender.py
+npm run dev
+```
+
+The game exporter writes `hello-kitty.glb`, `cozy-friends.glb`, `cozy-props.glb`
+and source provenance. It preserves your input `.blend`, excludes the studio,
+reduces the character mesh, converts the wink to morph targets, and produces
+independent named clips. Preserve object/controller names when editing so the
+existing game events keep working. Game lighting is defined separately in Three.js.
+
 ## Open on your Mac
 
 Open `hello_kitty_animated.blend` in Blender, move your pointer over the timeline,
