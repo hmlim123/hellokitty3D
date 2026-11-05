@@ -189,3 +189,36 @@ ffmpeg -framerate 24 -i animation_frames/frame_%04d.png -c:v libx264 -crf 18 -pi
 
 No server or background service is required. Cloud tasks already have an isolated
 checkout; use it without creating a Git worktree. Keep the GitHub repository private.
+
+## Five animated plush editions · v2.0
+
+All five are complete, self-contained Blender projects based on the natural
+edition. Earlier files remain intact. Each includes real short curled fiber
+geometry, a packed fabric normal map, fused rounded paws, thirteen named motions,
+a distinct soft dance, a wink and a two-eye happy expression.
+
+| File | Look |
+| --- | --- |
+| `hello_kitty_plush_cloud.blend` | Strawberry Cloud: cream pile and a pink bow/dress |
+| `hello_kitty_plush_witch.blend` | Moonlight Witch: bent lavender hat, stitched spider/star, cape |
+| `hello_kitty_plush_baby.blend` | Baby Blossom: pink romper, duckling bib and pacifier |
+| `hello_kitty_plush_kitten.blend` | Rose Kitten: white hood, pink ruff/back bow and heart eye glints |
+| `hello_kitty_plush_bunny.blend` | Silver Bunny: ivory hood, long ears and silver satin ribbons |
+
+Open a file directly on your Mac. Select `CTRL_*` to edit poses. Dance is frames
+1–49, wave/wink 49–97, and happy celebration 391–451 at 24 fps. The fine pile is
+merged by body part; paw pile copies the actual elbow/paw morph deformation.
+Hat/ear controls add small secondary motion. The bouquet is hidden in the saved
+portrait so the costume can be reviewed; game equipment controls it separately.
+
+Rebuild all five, with their portraits:
+
+```sh
+blender -b --threads 5 --python-exit-code 1 --python create_plush_collection.py -- --render
+```
+
+Use `--style cloud` (or witch/baby/kitten/bunny) after `--` for one edition.
+Back up manual edits before rebuilding. The generator overwrites these five
+outputs only. No external textures, hair plugins or cache simulations are needed.
+The game exports the actual meshes and motions, and loads only the selected
+edition. The original character remains available.
