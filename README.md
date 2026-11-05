@@ -5,6 +5,33 @@ flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whit
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
+## Natural interactive edition · v1.9
+
+Open **`hello_kitty_natural.blend`** for the newest game source. The original,
+Hawaiian and first game editions remain unchanged. This edition adds soft elbow
+and paw shape keys on the actual fused arm meshes, synchronized paw sockets,
+input-driven contact poses, a tray-placement step, handover, an openable oven,
+a wrapped cookie parcel, flower pot and crescent cutter. There are 13 named clips.
+
+Select `White arm -1` or `White arm 1` → Object Data → Shape Keys to edit
+`Elbow_soft` / `Paw_soft`. Body/head still use the editable toy controls;
+this is a hybrid object/morph rig, without finger articulation. The Stir range
+loops at the bowl; Cut has anticipation, pressure and settling; PlaceTray turns
+and steps toward the oven. The browser damps the clip clock toward pointer input
+rather than restarting a clip on every event. Static/reduced-motion operation is
+supported. Keep controller and socket names when editing.
+
+Rebuild from the first game edition:
+
+```sh
+blender -b hello_kitty_game.blend --python-exit-code 1 --python create_natural_game.py
+```
+
+Export the natural edition using the game repository's `scripts/export_blender.py`.
+The exporter preserves authored arm morphs and excludes the studio. The character
+is about 2.3 MB; original files remain available. Save manual edits to a separate
+working copy before regenerating. Animation renders use `//natural_frames/`.
+
 ## Game edition · November 2026
 
 Open **`hello_kitty_game.blend`** for the game work. The original static and
