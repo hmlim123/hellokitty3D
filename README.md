@@ -21,10 +21,15 @@ and steps toward the oven. The browser damps the clip clock toward pointer input
 rather than restarting a clip on every event. Static/reduced-motion operation is
 supported. Keep controller and socket names when editing.
 
+The v1.9.1 polish keeps the serving tray level through body turns, sizes it for
+the oven, and aligns PlaceTray with the game kitchen. The oven now has a real
+cavity. This completes the existing interaction without adding another activity.
+
 Rebuild from the first game edition:
 
 ```sh
 blender -b hello_kitty_game.blend --python-exit-code 1 --python create_natural_game.py
+blender -b hello_kitty_natural.blend --python-exit-code 1 --python refine_natural_flow.py
 ```
 
 Export the natural edition using the game repository's `scripts/export_blender.py`.
