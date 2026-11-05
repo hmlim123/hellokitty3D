@@ -306,7 +306,9 @@ for style,title,color in STYLES:
   refine_silver_bunny()
  from smooth_collection_finish import smooth_collection_finish
  smooth_collection_finish()
- s.frame_set(1);bpy.context.preferences.filepaths.save_version=0
+ from add_character_expressions import add_character_expressions
+ add_character_expressions()
+ bpy.context.preferences.filepaths.save_version=0
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/('hello_kitty_plush_'+style+'.blend')))
  if '--render' in sys.argv:bpy.ops.render.render(write_still=True)
  print('PLUSH_EDITION_READY',style,flush=True)

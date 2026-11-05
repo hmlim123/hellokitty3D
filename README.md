@@ -268,3 +268,9 @@ blender -b hello_kitty_plush_cloud.blend --python-exit-code 1 --python smooth_co
 
 Substitute witch, baby, kitten or bunny for another edition. The original game
 character and previous source projects are preserved.
+
+### Empty paws and expressions
+
+Open `hello_kitty_natural.blend` or any of the five smooth plush editions. Each opens at frame 1105 with relaxed empty paws; the bouquet remains an optional hidden prop. The real fused arm meshes carry an `EmptyRest` relative shape, anchored at the shoulder, so the existing holding and baking contacts remain available.
+
+Five new mouthless expressions use actual eye shape keys, subtle head poses and a projected blush for the bashful look: sleepy 733–805, surprised 805–853, happy squint 853–925, shy 925–997, curious 997–1069. The relaxed-paw showcase is 1069–1141. Original performances 1–727 remain. `add_character_expressions.py` authors this library and the collection builder applies it automatically. The game exports the same named clips and selects the appropriate paw shape for empty or occupied hands.
