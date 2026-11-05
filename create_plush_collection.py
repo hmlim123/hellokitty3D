@@ -297,7 +297,7 @@ for style,title,color in STYLES:
  # A clean fabric portrait, with room around the witch hat and bunny ears.
  s.camera.location=(2.8,-15,6.2);target=Vector((0,-.05,2.80 if style in ['witch','bunny']else 2.45));s.camera.rotation_euler=(target-s.camera.location).to_track_quat('-Z','Y').to_euler();s.camera.data.ortho_scale=7.1 if style in ['witch','bunny']else 6.2
  s.render.engine='BLENDER_EEVEE_NEXT';s.eevee.taa_render_samples=48;s.render.resolution_x=640;s.render.resolution_y=640;s.render.resolution_percentage=100
- s.render.image_settings.file_format='PNG';s.render.filepath=str(OUT/('hello_kitty_plush_'+style+'.png'))
+ s.render.image_settings.file_format='PNG';s.render.filepath='//hello_kitty_plush_'+style+'.png'
  s.frame_set(1);bpy.context.preferences.filepaths.save_version=0
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/('hello_kitty_plush_'+style+'.blend')))
  if '--render' in sys.argv:bpy.ops.render.render(write_still=True)
