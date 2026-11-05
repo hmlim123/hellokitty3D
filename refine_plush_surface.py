@@ -4,7 +4,7 @@ against an existing plush .blend with -- --style cloud [--draft] [--render].
 """
 import bpy, math, sys
 import numpy as np
-from mathutils import Vector, noise
+from mathutils import Vector
 from pathlib import Path
 
 def normal_image():
@@ -61,20 +61,13 @@ def refine_surface(style):
         for node in mat.node_tree.nodes:
             if node.type=='TEX_IMAGE':node.image=image
             if node.type=='NORMAL_MAP':node.inputs['Strength'].default_value=.42
-    # Tiny continuous nap relief, not individual hair hooks. Applying the same
-    # offset to every key preserves the authored elbow/paw deformation exactly.
+    # Keep the original smooth mesh and paw morphs; the final matte pass
+    # removes these intermediate fabric normals without geometric microrelief.
     for obj in char.objects:
         if obj.type!='MESH' or not any(m in fabrics for m in obj.data.materials):continue
         if obj.name.startswith(('Eye ','Kitten eye','Baby embroidered','Baby duck')):continue
         obj['plush_surface']='close-cropped-fleece'
-        mesh=obj.data;world=obj.matrix_world.copy()
-        for vertex in mesh.vertices:
-            point=world@vertex.co
-            value=noise.noise(point*41.0,noise_basis='PERLIN_ORIGINAL')
-            delta=vertex.normal*(value*.003)
-            if mesh.shape_keys:
-                for key in mesh.shape_keys.key_blocks:key.data[vertex.index].co+=delta
-            else:vertex.co+=delta
+        mesh=obj.data
         if mesh.uv_layers.active:
             for uv in mesh.uv_layers.active.data:uv.uv*=.5
         mesh.update()

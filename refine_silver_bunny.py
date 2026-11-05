@@ -6,7 +6,7 @@ import bpy,math,sys
 from pathlib import Path
 from mathutils import Vector
 
-SHAPE='soft-curved-v1'
+SHAPE='rounded-curved-v2'
 
 def mesh_object(name,vertices,faces,material,parent,uvs=None):
     obj=bpy.data.objects.get(name)
@@ -35,8 +35,13 @@ def surface(t,theta,sign):
     tangent=(center(min(1,t+.001),sign)-center(max(0,t-.001),sign)).normalized()
     across=Vector((tangent.z,0,-tangent.x)).normalized()
     front=tangent.cross(across).normalized()
-    shape=max(0,math.sin(math.pi*(.12+.88*t)))
-    return c+across*(.335*shape**.58*math.cos(theta))+front*(.225*shape**.55*math.sin(theta))
+    # Broad padded ear with an explicit elliptical end cap, rather than a
+    # leaf-like taper all the way to a pointed tip.
+    if t<=.78:
+        width=.235+.070*math.sin(math.pi*t/.78)
+    else:
+        width=.235*math.sqrt(max(0,1-((t-.78)/.22)**2))
+    return c+across*(width*math.cos(theta))+front*(width*.74*math.sin(theta))
 
 def refine_silver_bunny():
     scene=bpy.context.scene
@@ -53,12 +58,10 @@ def refine_silver_bunny():
     for face in old.data.polygons:face.use_smooth=True
     for uv in old.data.uv_layers.active.data:uv.uv*=4
     old['plush_hood_surface']=SHAPE
-    hood=bpy.data.objects['Plush bunny hood'];inv=hood.matrix_world.inverted()
-    for v in hood.data.vertices:
-        p=hood.matrix_world@v.co;q=Vector((p.x/1.55,p.y/1.04,(p.z-3.4)/1.16)).normalized()
-        p=Vector((q.x*1.55,q.y*1.04,3.4+q.z*1.16))
-        n=Vector((q.x/1.55,q.y/1.04,q.z/1.16)).normalized();v.co=inv@(p+n*.014)
-    hood.data.update();hood['plush_hood_surface']=SHAPE
+    # A second shell at nearly the same depth makes a stray rim near the
+    # rabbit-ear bases. The clean oval head itself is the hood surface.
+    hood=bpy.data.objects.get('Plush bunny hood')
+    if hood:bpy.data.objects.remove(hood,do_unlink=True)
     lining=cream.copy();lining.name='Bunny soft silver satin lining'
     bs=lining.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(.65,.69,.74,1)
     bs.inputs['Metallic'].default_value=.08;bs.inputs['Roughness'].default_value=.83;bs.inputs['Sheen Weight'].default_value=.16
@@ -88,7 +91,7 @@ def refine_silver_bunny():
         vertices=[inverse@(surface(.16,-math.pi/2,sign)+Vector((0,-.006,0)))];faces=[]
         rows=26;across=16
         for row in range(1,rows):
-            s=row/rows;t=.16+.69*s;spread=.72*math.sin(math.pi*s)**.55
+            s=row/rows;t=.16+.69*s;spread=.67*math.sqrt(max(0,1-(2*s-1)**2))
             for j in range(across+1):
                 theta=-math.pi/2+spread*(2*j/across-1)
                 vertices.append(inverse@(surface(t,theta,sign)+Vector((0,-.006,0))))

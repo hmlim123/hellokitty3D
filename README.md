@@ -190,23 +190,23 @@ ffmpeg -framerate 24 -i animation_frames/frame_%04d.png -c:v libx264 -crf 18 -pi
 No server or background service is required. Cloud tasks already have an isolated
 checkout; use it without creating a Git worktree. Keep the GitHub repository private.
 
-## Five animated plush editions · v2.0.1
+## Five animated plush editions · v2.0.3
 
 All five are complete, self-contained Blender projects based on the natural
-edition. Earlier files remain intact. Each includes close-cropped fleece, a packed seamless fabric normal map,
+edition. Earlier files remain intact. Each includes a smooth matte finish,
 fused rounded paws, thirteen named motions,
 a distinct soft dance, a wink and a two-eye happy expression.
 
 | File | Look |
 | --- | --- |
-| `hello_kitty_plush_cloud.blend` | Strawberry Cloud: cream pile and a pink bow/dress |
+| `hello_kitty_plush_cloud.blend` | Strawberry Cloud: smooth cream fabric and a pink bow/dress |
 | `hello_kitty_plush_witch.blend` | Moonlight Witch: bent lavender hat, stitched spider/star, cape |
 | `hello_kitty_plush_baby.blend` | Baby Blossom: pink romper, duckling bib and pacifier |
 | `hello_kitty_plush_kitten.blend` | Rose Kitten: white hood, pink ruff/back bow and heart eye glints |
 | `hello_kitty_plush_bunny.blend` | Silver Bunny: ivory hood, long ears and silver satin ribbons |
 
 Open a file directly on your Mac. Select `CTRL_*` to edit poses. Dance is frames
-1–49, wave/wink 49–97, and happy celebration 391–451 at 24 fps. The surface uses fine fabric normals and subtle continuous nap relief.
+1–49, wave/wink 49–97, and happy celebration 391–451 at 24 fps. The surface has a smooth matte finish without fleece normals or tiny nap relief.
 Exposed curl meshes have been removed so the chin stays clean. Whiskers are
 short cheek stitches; the fused paws retain elbow/paw morph deformation.
 Hat/ear controls add small secondary motion. The bouquet is hidden in the saved
@@ -251,3 +251,20 @@ blender -b hello_kitty_plush_bunny.blend --python-exit-code 1 --python refine_si
 
 All 13 original motions and paw sockets remain. The other four editions are
 unchanged by this fitting.
+
+## Smooth matte collection · v2.0.3
+
+All five editions now use a smooth matte finish. Fleece normal/bump textures are
+removed from the character materials; colors, costumes, geometry, all 13 motions,
+paw deformation and fitted Silver Bunny ears remain. Silver bows have a softer
+satin response. No external texture is needed.
+
+`smooth_collection_finish.py` applies the smooth finish and is the final
+step in the collection generator. Reapplying it is safe:
+
+```sh
+blender -b hello_kitty_plush_cloud.blend --python-exit-code 1 --python smooth_collection_finish.py -- --render
+```
+
+Substitute witch, baby, kitten or bunny for another edition. The original game
+character and previous source projects are preserved.
