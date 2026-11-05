@@ -72,6 +72,26 @@ for f in range(511, 584, 3):
 for fc in root.animation_data.action.fcurves:
     for p in fc.keyframe_points:
         p.handle_left_type = 'AUTO_CLAMPED';p.handle_right_type = 'AUTO_CLAMPED'
+# Hold the spoon by its handle and aim its scoop into the dough, instead of
+# burying the scoop beneath the worktop. The paw remains the attachment point.
+spoon = bpy.data.objects.get('Socket_Spoon')
+if not spoon:
+    spoon = bpy.data.objects.new('Socket_Spoon', None)
+    bpy.data.collections['ANIMATION — select controls to pose'].objects.link(spoon)
+spoon.parent = bpy.data.objects['Socket_Paw_R'];spoon.location = (0, 0, 0)
+spoon.rotation_mode = 'QUATERNION'
+spoon.rotation_quaternion = Vector((0, 0, -1)).rotation_difference(Vector((.080326, -.364769, -.307962)).normalized())
+spoon.scale = (1.3, 1.3, 1.3)
+if bpy.data.objects.get('Preview_Toy_Spoon'):
+    bpy.data.objects['Preview_Toy_Spoon'].parent = spoon
+# Cutter starts above the dough and presses down to the back of the worktop.
+arm = bpy.data.objects['CTRL_Arm_R']
+for f in range(217, 266, 3):
+    t = (f-217)/48
+    press = smooth(.24, .48, t)*(1-smooth(.62, .93, t))
+    anticipation = math.sin(math.pi*min(1, t/.24))*.04 if t < .24 else 0
+    arm.rotation_euler = (-.2 + .25*press-anticipation if f < 265 else 0, 0, 0)
+    arm.keyframe_insert('rotation_euler', frame=f)
 s['Natural flow polish'] = 'Level tray constraint; oven-sized serving tray; open oven shell and aligned deposit/withdraw motion. Existing 13 clips and fused paws preserved.'
 s.frame_set(1)
 bpy.context.preferences.filepaths.save_version = 0
