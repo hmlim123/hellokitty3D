@@ -301,6 +301,9 @@ for style,title,color in STYLES:
  sys.path.insert(0,str(OUT))
  from refine_plush_surface import refine_surface
  refine_surface(style)
+ if style=='bunny':
+  from refine_silver_bunny import refine_silver_bunny
+  refine_silver_bunny()
  s.frame_set(1);bpy.context.preferences.filepaths.save_version=0
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/('hello_kitty_plush_'+style+'.blend')))
  if '--render' in sys.argv:bpy.ops.render.render(write_still=True)

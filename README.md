@@ -234,3 +234,20 @@ blender -b hello_kitty_plush_cloud.blend --python-exit-code 1 --python refine_pl
 The correction is idempotent and retains all named performances and source controls.
 This is a short-pile velour/fleece finish suitable for real-time play, rather than
 individual long fur strands. Textures are packed; no external caches are required.
+
+## Silver Bunny ear fitting · v2.0.2
+
+Silver Bunny now has broad sewn-in bases, softly curved asymmetric ear tips and
+flush silver satin lining. Its hood has a clean oval head without hidden cat-ear
+bumps. Ear roots follow the existing head control and the two ears settle
+independently during the dance, then return to rest.
+
+`refine_silver_bunny.py` reproduces the fitting and is called by the collection
+builder. It can also update an existing Silver Bunny project and is idempotent:
+
+```sh
+blender -b hello_kitty_plush_bunny.blend --python-exit-code 1 --python refine_silver_bunny.py -- --render
+```
+
+All 13 original motions and paw sockets remain. The other four editions are
+unchanged by this fitting.
