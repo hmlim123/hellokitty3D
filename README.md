@@ -24,6 +24,7 @@ supported. Keep controller and socket names when editing.
 The v1.9.1 polish keeps the serving tray level through body turns, sizes it for
 the oven, and aligns PlaceTray with the game kitchen. The oven now has a real
 cavity. This completes the existing interaction without adding another activity.
+Stir now has a separate closing contact frame at 216, before Cut begins at 217.
 
 Rebuild from the first game edition:
 

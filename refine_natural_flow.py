@@ -3,10 +3,26 @@ blender -b hello_kitty_natural.blend --python-exit-code 1 --python refine_natura
 """
 import bpy
 import math
+import json
 from mathutils import Vector
 from pathlib import Path
 
 s = bpy.context.scene
+s.frame_set(1)
+# Give the stir clip its own closing contact frame before Cut begins at 217.
+# Adjacent clips must not overwrite the endpoint of a continuous spoon loop.
+controls = list(bpy.data.collections['ANIMATION — select controls to pose'].objects)
+s.frame_set(145)
+transforms = [(o, o.location.copy(), o.rotation_euler.copy(), o.scale.copy()) for o in controls]
+morphs = [(key, key.value) for o in bpy.data.objects if o.type == 'MESH' and o.data.shape_keys for key in o.data.shape_keys.key_blocks if key.name in ['Elbow_soft', 'Paw_soft']]
+s.frame_set(216)
+for o, location, rotation, scale in transforms:
+    o.location = location;o.rotation_euler = rotation;o.scale = scale
+    for prop in ['location', 'rotation_euler', 'scale']:
+        if o.animation_data and o.animation_data.action:o.keyframe_insert(prop, frame=216)
+for key, value in morphs:
+    key.value = value;key.keyframe_insert('value', frame=216)
+clips = json.loads(s['kitty_clips']);clips['stir'] = [145, 216];s['kitty_clips'] = json.dumps(clips)
 s.frame_set(1)
 # Keep the tray level while the body leans. Heading still follows the root.
 socket = bpy.data.objects['Socket_Tray']
