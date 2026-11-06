@@ -274,3 +274,12 @@ character and previous source projects are preserved.
 Open `hello_kitty_natural.blend` or any of the five smooth plush editions. Each opens at frame 1105 with relaxed empty paws; the bouquet remains an optional hidden prop. The real fused arm meshes carry an `EmptyRest` relative shape, anchored at the shoulder, so the existing holding and baking contacts remain available.
 
 Five new mouthless expressions use actual eye shape keys, subtle head poses and a projected blush for the bashful look: sleepy 733–805, surprised 805–853, happy squint 853–925, shy 925–997, curious 997–1069. The relaxed-paw showcase is 1069–1141. Original performances 1–727 remain. `add_character_expressions.py` authors this library and the collection builder applies it automatically. The game exports the same named clips and selects the appropriate paw shape for empty or occupied hands.
+
+### Corrected side-rest arms (v2.2.1)
+
+The empty-paw shape is now a new rounded oval arm, rather than a rotated holding
+arm. Paws sit beside the dress and closer to the body in profile, with a tucked
+shoulder and no inward mitten curl. `refine_empty_paws.py` rebuilds only the
+`EmptyRest` target from the unchanged Basis mesh. All six files open at frame
+1105 in this pose. The actual grip geometry and baking sockets remain available
+at EmptyRest = 0. Front, side and three-quarter views were rendered for review.

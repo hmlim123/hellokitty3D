@@ -3,7 +3,9 @@ Preserves the existing 13 contact/dance performances and fitted costume meshes.
 """
 import bpy,math,json,sys
 from pathlib import Path
-from mathutils import Vector,Matrix
+from mathutils import Vector
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from refine_empty_paws import refine_empty_paws
 VERSION='expressions-v1'
 FACES={'sleepy':('Sleepy',733,805),'surprised':('Surprise',805,853),'softHappy':('SoftSmile',853,925),'shy':('Shy',925,997),'curious':('Curious',997,1069)}
 
@@ -16,7 +18,8 @@ def key_values(key,values):
 
 def add_character_expressions():
  s=bpy.context.scene
- if s.get('expression_library')==VERSION:return
+ if s.get('expression_library')==VERSION:
+  refine_empty_paws();return
  s.frame_set(1);char=bpy.data.collections['HELLO KITTY — editable parts'];head=bpy.data.objects['CTRL_Head']
  for side,name in [(-1,'Eye left'),(1,'Eye right')]:
   eye=bpy.data.objects[name];world=eye.matrix_world.copy();inv=world.inverted()
@@ -34,15 +37,9 @@ def add_character_expressions():
    values=[(1,0),(727,0)]
    for _,(_,a,b)in FACES.items():values.extend([(a,0),(a+8,1 if a==start else 0),(b-10,1 if a==start else 0),(b,0)])
    values.extend([(1069,0),(1141,0)]);key_values(key,sorted(set(values)))
- # Empty hands settle lower and a little closer to the body. The shoulder root
- # remains anchored; the geometry is sculpted into an actual relative shape key.
- for side,label in [(-1,'L'),(1,'R')]:
-  arm=bpy.data.objects['White arm '+str(side)];root=bpy.data.objects['CTRL_Arm_'+label].matrix_world.translation.copy()
-  world=arm.matrix_world.copy();inv=world.inverted();rest=ensure_key(arm,'EmptyRest')
-  rotation=Matrix.Rotation(.67,4,'X')@Matrix.Rotation(-side*.14,4,'Y')
-  for out,v in zip(rest.data,arm.data.vertices):
-   p=world@v.co;delta=p-root;weight=max(0,min(1,(delta.length-.14)/.22));weight=weight*weight*(3-2*weight)
-   relaxed=root+rotation@delta;out.co=inv@p.lerp(relaxed,weight)
+ # The resting silhouette is sculpted separately from the original grip.
+ for side in [-1,1]:
+  rest=ensure_key(bpy.data.objects['White arm '+str(side)],'EmptyRest')
   values=[(1,0),(727,0),(733,0),(741,1),(1059,1),(1069,0),(1077,1),(1131,1),(1141,0)];key_values(rest,values)
  # Project a thin blush patch onto the actual head surface, including costumes.
  pink=bpy.data.materials.new('Expression soft blush');pink.use_nodes=True
@@ -89,7 +86,7 @@ def add_character_expressions():
   while ancestor and ancestor.name!='CTRL_Bouquet':ancestor=ancestor.parent
   if ancestor:obj.hide_render=True;obj.hide_viewport=True
  s['expression_library']=VERSION;s['default_empty_frame']=1105;s['expression_guide']='Face shapes: Sleepy, Surprise, SoftSmile, Shy, Curious; projected Warmth blush; EmptyRest paw shape. Existing clips 1–727 preserved. New expressions 733–1069, relaxed empty-paw pose 1069–1141. Optional bouquet hidden by default.'
- s.frame_end=1141;s.frame_set(1105);print('BLENDER_EXPRESSIONS_READY',s.get('plush_variant','classic'),flush=True)
+ s.frame_end=1141;s.frame_set(1105);refine_empty_paws();print('BLENDER_EXPRESSIONS_READY',s.get('plush_variant','classic'),flush=True)
 
 if __name__=='__main__':
  add_character_expressions();s=bpy.context.scene;style=s.get('plush_variant','classic');draft='--draft'in sys.argv
