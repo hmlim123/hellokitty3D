@@ -28,7 +28,7 @@ def refine_empty_paws():
    length=q.z*.24+.19*math.tanh(q.z*2)/math.tanh(2)
    rounded=target+out*(q.x*.245)+front*(q.y*.25)+down*length
    # Preserve the tucked-in shoulder cap; the lower arm becomes a single oval.
-   weight=smooth(.15,.36,(p-root).length)
+   weight=smooth(.23,.36,(p-root).length)
    key.co=inv@p.lerp(rounded,weight)
   arm['empty_paw_pose']=VERSION
  s['empty_paw_pose']=VERSION;s.frame_set(s.get('default_empty_frame',1105));bpy.context.view_layer.update()

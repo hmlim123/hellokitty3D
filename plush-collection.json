@@ -4,7 +4,7 @@
     {
       "id": "cloud",
       "file": "hello_kitty_plush_cloud.blend",
-      "sha256": "a10c9d6abc8802dc051c0a2a8bce1a9ef9e086ba7e66bbe20837b3f2f5eb3edc",
+      "sha256": "5037bf1afe7d507c8b31a81c1d62833d1b6482386db9f2d8383773c97ce84e5b",
       "preview": "hello_kitty_plush_cloud.png",
       "fps": 24,
       "dance": [
@@ -51,7 +51,7 @@
     {
       "id": "witch",
       "file": "hello_kitty_plush_witch.blend",
-      "sha256": "3040114732223f216cbae7c57f0391fdfe66e02a64829a35a569209a1da8da02",
+      "sha256": "98b9f9b4b271793bc9855d8c089cf9d10e38f9cf10d4da6b95b3ed7b07b785a2",
       "preview": "hello_kitty_plush_witch.png",
       "fps": 24,
       "dance": [
@@ -98,7 +98,7 @@
     {
       "id": "baby",
       "file": "hello_kitty_plush_baby.blend",
-      "sha256": "70d1d2fe4902ba8f51f4cebdb49b525bf3d0f96a123015dd4debcfc27450a12c",
+      "sha256": "8082698b1654403197f2b23d081305a85b878e2bd8337c3aa69a80cf1856a831",
       "preview": "hello_kitty_plush_baby.png",
       "fps": 24,
       "dance": [
@@ -145,7 +145,7 @@
     {
       "id": "kitten",
       "file": "hello_kitty_plush_kitten.blend",
-      "sha256": "e7b57605f1728ac294370d6880025ecea17892a6234a2ab845ff992d6e3f255b",
+      "sha256": "62832cf74f9dcb27601d205d1a8c633bd2992f9e8288e37017adfd3e82e2fe42",
       "preview": "hello_kitty_plush_kitten.png",
       "fps": 24,
       "dance": [
@@ -192,7 +192,7 @@
     {
       "id": "bunny",
       "file": "hello_kitty_plush_bunny.blend",
-      "sha256": "a9166983a260be03acddc4bef5c2628dfe5f3c1d3ebe8fe8bddbf427260769bd",
+      "sha256": "e42ce817e58a361e40290f0fda1a581785aac76d2034d98243998e5053b4d3fe",
       "preview": "hello_kitty_plush_bunny.png",
       "fps": 24,
       "dance": [
