@@ -308,6 +308,8 @@ for style,title,color in STYLES:
  smooth_collection_finish()
  from add_character_expressions import add_character_expressions
  add_character_expressions()
+ from author_happy_dance import author_happy_dance
+ author_happy_dance()
  bpy.context.preferences.filepaths.save_version=0
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/('hello_kitty_plush_'+style+'.blend')))
  if '--render' in sys.argv:bpy.ops.render.render(write_still=True)

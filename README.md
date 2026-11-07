@@ -283,3 +283,18 @@ shoulder and no inward mitten curl. `refine_empty_paws.py` rebuilds only the
 `EmptyRest` target from the unchanged Basis mesh. All six files open at frame
 1105 in this pose. The actual grip geometry and baking sockets remain available
 at EmptyRest = 0. Front, side and three-quarter views were rendered for review.
+
+### Happy dance (v2.3.0)
+
+All six projects include a six-second happy step-touch routine: wider alternating
+steps, broad paw swings, two cheerful hops, smiling eyes and a cheer/bow finish.
+The feet are placed in world space while planted; toe clearance is calculated
+from the actual foot mesh. The occupied-paw take keeps the original grip while
+the feet, body and head follow the same choreography.
+
+24fps: `dance` 1153–1297; `danceHeld` 1309–1453. The previous nineteen named
+performances remain available, with the new routine replacing the tiny dance
+and the held take bringing the library to twenty clips. Legacy frames 1–49
+remain in the source. Files still open at the empty-arm rest frame 1105.
+`author_happy_dance.py` reproduces both takes and is called by the collection
+builder. Earlier baking/contact performances and outfits are preserved.
