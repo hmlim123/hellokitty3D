@@ -17,7 +17,8 @@ def sample(keys,frame):
 def clear_range(data):
  if not data.animation_data or not data.animation_data.action:return
  for curve in data.animation_data.action.fcurves:
-  for key in list(curve.keyframe_points):
+  for i in range(len(curve.keyframe_points)-1,-1,-1):
+   key=curve.keyframe_points[i]
    if START<=key.co.x<=HELD_START+LENGTH:curve.keyframe_points.remove(key,fast=True)
   curve.update()
 
@@ -27,10 +28,12 @@ def author_happy_dance():
  phase={'classic':0,'cloud':.08,'witch':.20,'baby':.30,'kitten':.12,'bunny':.24}[style]
  names=['CTRL_Root','CTRL_Body','CTRL_Head','CTRL_Bouquet','CTRL_Arm_L','CTRL_Arm_R','CTRL_Foot_L','CTRL_Foot_R']
  controls={n:bpy.data.objects[n]for n in names};base={n:(o.location.copy(),o.rotation_euler.copy(),o.scale.copy())for n,o in controls.items()}
+ sockets=[bpy.data.objects['Socket_Paw_'+side]for side in ['L','R']]
+ socket_base={o.name:o.location.copy()for o in sockets}
  extras=[o for o in bpy.data.collections['ANIMATION — select controls to pose'].objects if o.name.startswith('CTRL_Plush')]
  extra_base={o.name:o.rotation_euler.copy()for o in extras}
  eyes=[bpy.data.objects['Eye left'],bpy.data.objects['Eye right']];arms=[bpy.data.objects['White arm -1'],bpy.data.objects['White arm 1']]
- for o in [*controls.values(),*extras]:clear_range(o)
+ for o in [*controls.values(),*extras,*sockets]:clear_range(o)
  for o in eyes+arms:clear_range(o.data.shape_keys)
  foot_data={}
  for side,label in [(-1,'L'),(1,'R')]:
@@ -80,8 +83,11 @@ def author_happy_dance():
    for name,o in controls.items():
     for prop in ['location','rotation_euler','scale']:o.keyframe_insert(prop,frame=frame)
    for o in extras:
-    secondary=(.025*math.sin(math.pi*beat-.55)*engage,.04*math.sin(math.pi*beat-.7+phase)*engage,.018*math.sin(math.pi*beat-.9)*engage)
+    lag=-.18 if o.name.endswith(('_L','_-1'))else .22
+    secondary=(.025*math.sin(math.pi*beat-.55+lag)*engage,.04*math.sin(math.pi*beat-.7+phase+lag)*engage,.018*math.sin(math.pi*beat-.9+lag)*engage)
     o.rotation_euler=tuple(extra_base[o.name][i]+secondary[i]for i in range(3));o.keyframe_insert('rotation_euler',frame=frame)
+   for o in sockets:
+    o.location=socket_base[o.name];o.keyframe_insert('location',frame=frame)
    smile=between(4,14,f)*(1-between(124,142,f))
    for eye in eyes:
     for key in eye.data.shape_keys.key_blocks:
@@ -92,7 +98,7 @@ def author_happy_dance():
      if key.name in ['EmptyRest','Elbow_soft','Paw_soft']:
       key.value=(0 if held else 1)if key.name=='EmptyRest'else 0;key.keyframe_insert('value',frame=frame)
  # Dense new motion samples interpolate linearly; no toe overshoot between poses.
- for data in [*controls.values(),*extras,*[o.data.shape_keys for o in eyes+arms]]:
+ for data in [*controls.values(),*extras,*sockets,*[o.data.shape_keys for o in eyes+arms]]:
   if data.animation_data and data.animation_data.action:
    for curve in data.animation_data.action.fcurves:
     for key in curve.keyframe_points:
