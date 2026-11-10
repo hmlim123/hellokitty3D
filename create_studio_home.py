@@ -325,7 +325,7 @@ tube('Lantern handle',[(-.12,.6,0),(-.1,.82,0),(.1,.82,0),(.12,.6,0)],.02,edge)
 anchor('lantern',(0,.7,0))
 # Additional memory anchors are tied to existing furniture surfaces.
 current=station('Studio_Anchors')
-for name,pos,yaw in [('ribbon',(2.02,1.24,3.0),0),('letter',(3.38,1.25,2.98),0),('flowers',(-2.3,.145,.55),0),('tea',(-2.7,.78,1.15),0),('frame_wall',(-5.68,2.15,1.65),math.pi/2),('frame_back',(-3.95,2.85,-4.91),0),('frame_nook',(2.9,1.25,2.55),0)]:anchor(name,pos,yaw=yaw)
+for name,pos,yaw in [('ribbon',(2.02,1.24,3.0),0),('letter',(3.38,1.25,2.98),0),('flowers',(-2.3,.145,.55),0),('tea',(-2.7,.78,1.15),0),('frame_wall',(-5.68,2.15,-4.1),math.pi/2),('frame_back',(-5.05,2.85,-4.91),0),('frame_nook',(2.9,1.25,2.55),0)]:anchor(name,pos,yaw=yaw)
 for i in range(6):anchor('postcard_'+str(i),(-5.68,3.05-(i//3)*.86,-.1+(i%3)*.76),yaw=math.pi/2)
 # Simple bedroom wall art, authored as geometry.
 current=station('Studio_WallArt')
