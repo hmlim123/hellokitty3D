@@ -298,3 +298,26 @@ and the held take bringing the library to twenty clips. Legacy frames 1–49
 remain in the source. Files still open at the empty-arm rest frame 1105.
 `author_happy_dance.py` reproduces both takes and is called by the collection
 builder. Earlier baking/contact performances and outfits are preserved.
+
+## Editable studio home
+
+`nancy_studio_home.blend` is the complete original studio house. It has a sleeping
+corner, bathroom with shower, kitchen with sink/stove/oven/fridge, dining table,
+sofa and coffee table, writing desk, wardrobe, and collection shelf. The bright
+rounded furniture is individually editable in the source; it is not a flat image.
+
+- Rebuild from the authoring script (replaces the generated source):
+  `blender -b --python-exit-code 1 --python create_studio_home.py`
+- Export **your edited** source without rebuilding or overwriting it:
+  `blender -b nancy_studio_home.blend --python-exit-code 1 --python export_studio_home.py`
+- Render a preview: open the source and Render → Render Image. The project uses
+  Eevee with 96 samples and no grain. The camera and lights stay in Blender.
+
+`studio-home.glb` is a phone-sized static export (about 2 MB / 42,000 triangles).
+`studio-home.json` records the source checksum and actual furniture anchors.
+Copy both to `hellokittygame/dist/assets/` together. Keep the named station roots,
+`studio_action` properties and anchor empties when editing: the browser uses them
+for tapping furniture and placing saved decorations. Keep source mesh pieces
+separate; the exporter combines and reduces them only in memory before export.
+The source file is not saved by the exporter. Existing Kitty character files,
+animations and paw attachment points are independent and unchanged.
