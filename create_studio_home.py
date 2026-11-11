@@ -229,15 +229,15 @@ box('Kitchen tile backsplash',(2.65,1.65,-4.91),(2.75,.9,.055),tile,.015)
 for x in [1.45,1.9,2.35,2.8,3.25,3.7]:box('Backsplash vertical grout',(x,1.65,-4.87),(.012,.86,.012),white,.002)
 box('Backsplash grout',(2.65,1.65,-4.87),(2.7,.012,.012),white,.002)
 # A two-person dining table with real chairs, place settings and biscuits.
-current=station('Studio_Dining',(3.6,.13,-.8))
+current=station('Studio_Dining',(4.0,.13,-.8),role='seat')
 cylinder('Dining table pedestal',(0,.48,0),.09,.94,edge);cylinder('Dining foot',(0,.08,0),.5,.1,wood)
 cylinder('Dining round top',(0,1.02,0),.82,.12,cream)
 for side in [-1,1]:
-    chair=station('Dining chair '+str(side),(side*1.2,0,0),-side*math.pi/2,parent=current)
-    box('Dining chair seat',(0,.57,0),(.65,.15,.64),blush,.08,parent=chair)
-    box('Dining chair back',(0,1,-.28),(.7,.92,.12),cream,.09,parent=chair)
-    for x in [-.23,.23]:
-        for z in [-.22,.22]:cylinder('Dining chair foot',(x,.26,z),.04,.53,edge,parent=chair)
+    chair=station('Dining chair '+str(side),(-1.6 if side<0 else 1.2,0,.45 if side<0 else 0),math.pi/4 if side<0 else -math.pi/2,parent=current)
+    box('Dining chair seat',(0,.57,0),(1.08,.15,1.0),blush,.08,parent=chair)
+    box('Dining chair back',(0,1,-.48),(1.12,.92,.12),cream,.09,parent=chair)
+    for x in [-.4,.4]:
+        for z in [-.36,.36]:cylinder('Dining chair foot',(x,.26,z),.04,.53,edge,parent=chair)
 cup('Dining rose cup',(-.35,1.1,.05),pink,scale=.8);cup('Dining sage cup',(.35,1.1,-.1),sage,scale=.8)
 cylinder('Cookie plate',(0,1.1,.3),.22,.025,white)
 for x in [-.1,.08]:
@@ -254,7 +254,7 @@ for x in [-.58,.58]:
     box('Sofa seat cushion',(x,.68,.05),(1.08,.2,.83),sage,.09)
     ball('Sofa pillow',(x,.99,-.19),(.34,.32,.14),blush)
 anchor('reading',(0,.89,.7));anchor('nook',(.52,.8,.13));anchor('chair',(-.55,.8,.15))
-current=station('Studio_CoffeeTable',(-2.9,.13,1.1))
+current=station('Studio_CoffeeTable',(-2.9,.13,1.8))
 box('Coffee table top',(0,.57,0),(1.4,.12,.86),cream,.14)
 for x in [-.48,.48]:
     for z in [-.23,.23]:cylinder('Coffee table leg',(x,.28,z),.045,.53,edge)
@@ -286,9 +286,9 @@ cylinder('Desk lamp base',(-.73,1.12,-.12),.14,.045,edge)
 tube('Desk lamp neck',[(-.73,1.14,-.12),(-.73,1.7,-.12),(-.53,1.82,-.1)],.026,edge)
 ball('Desk lamp shade',(-.51,1.78,-.1),(.2,.14,.18),light)
 anchor('lamp_desk',(-.51,1.78,-.1))
-box('Desk stool seat',(0,.57,.95),(.7,.17,.65),blush,.1)
+box('Desk stool seat',(0,.57,.62),(.7,.17,.65),blush,.1)
 for x in [-.24,.24]:
-    for z in [.72,1.18]:cylinder('Desk stool foot',(x,.26,z),.035,.52,edge)
+    for z in [.39,.85]:cylinder('Desk stool foot',(x,.26,z),.035,.52,edge)
 anchor('desk',(0,1.2,.25));anchor('table',(.55,1.1,.18))
 # Main soft rug and a few deliberate plants keep the centre open.
 current=station('Studio_Rug')
@@ -325,8 +325,27 @@ tube('Lantern handle',[(-.12,.6,0),(-.1,.82,0),(.1,.82,0),(.12,.6,0)],.02,edge)
 anchor('lantern',(0,.7,0))
 # Additional memory anchors are tied to existing furniture surfaces.
 current=station('Studio_Anchors')
-for name,pos,yaw in [('ribbon',(2.02,1.24,3.0),0),('letter',(3.38,1.25,2.98),0),('flowers',(-2.3,.145,.55),0),('tea',(-2.7,.78,1.15),0),('frame_wall',(-5.68,2.15,-4.1),math.pi/2),('frame_back',(-5.05,2.85,-4.91),0),('frame_nook',(2.9,1.25,2.55),0)]:anchor(name,pos,yaw=yaw)
+for name,pos,yaw in [('ribbon',(2.02,1.24,3.0),0),('letter',(3.38,1.25,2.98),0),('flowers',(-2.3,.145,.55),0),('tea',(-2.7,.78,1.85),0),('frame_wall',(-5.68,2.15,-4.1),math.pi/2),('frame_back',(-5.05,2.85,-4.91),0),('frame_nook',(2.9,1.25,2.55),0)]:anchor(name,pos,yaw=yaw)
 for i in range(6):anchor('postcard_'+str(i),(-5.68,3.05-(i//3)*.86,-.1+(i%3)*.76),yaw=math.pi/2)
+# Playable approaches leave a generous central aisle. Seat and tray points
+# are shared with the controller; helper empties are exported, never rendered.
+current=station('Studio_Anchors_Play')
+for name,pos,yaw in [
+ ('approach_kitchen',(3.57,.145,-2.7),math.pi),
+ ('approach_wardrobe',(4.9,.145,3.85),math.pi),
+ ('approach_desk',(1.65,.145,3.75),math.pi),
+ ('approach_sofa',(-3.65,.145,-.05),-math.pi/2),
+ ('approach_bed',(-2.05,.145,-1.3),math.pi),
+ ('approach_seat',(2.05,.145,1.15),math.pi/4),
+ ('approach_exit',(1.65,.145,4.3),0),
+ ('tea_seat',(2.4,.145,-.35),math.pi/4),
+ ('tea_cup',(2.879,1.084,-.176),0),
+]:anchor(name,pos,yaw=yaw)
+current=station('Studio_TeaTray',(2.879,.13,-.176),role='seat')
+box('Tea tray top',(0,.925,0),(.42,.055,.42),wood,.06)
+cylinder('Tea tray stem',(0,.46,0),.035,.9,edge)
+cylinder('Tea tray foot',(0,.04,0),.19,.06,wood)
+
 # Simple bedroom wall art, authored as geometry.
 current=station('Studio_WallArt')
 frame('You are loved print',(-3.95,2.35,-4.91),scale=1.3)

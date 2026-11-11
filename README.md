@@ -321,3 +321,36 @@ for tapping furniture and placing saved decorations. Keep source mesh pieces
 separate; the exporter combines and reduces them only in memory before export.
 The source file is not saved by the exporter. Existing Kitty character files,
 animations and paw attachment points are independent and unchanged.
+
+## Playable home and chair performances
+
+The studio now exports collision footprints and approach helpers for indoor
+walking. The coffee table and desk stool leave usable aisles; the bathroom door
+is open, and its individual fittings block movement. The playable dining chair
+has a wider cushion, a real seat anchor and a small tray at the cup's grip height.
+
+`home_motions/kitty_home_{classic,cloud,witch,baby,kitten,bunny}.blend` are separate
+editable home-performance projects. Original character projects retain all their
+existing animations. The seven new clips are sitDown, sitIdle, cupIdle, takeCup,
+sipSit, putCup and standUp, at 24 fps. Each project opens seated on an editable
+preview chair. The preview chair, character geometry and studio are excluded
+from the small controller-only browser motion library (about 65 KB per edition).
+`home_motions/classic-seated.png` shows the actual authored pose.
+
+To export an **edited home motion project** without rebuilding or saving it:
+
+```sh
+blender -b home_motions/kitty_home_classic.blend --python-exit-code 1 --python export_home_motions.py
+```
+
+The exporter includes `game_export_helpers/glb_clips.py` and needs no add-on.
+On a Mac use `/Applications/Blender.app/Contents/MacOS/Blender` in place of
+`blender`. Copy the matching `.glb` and `.json` to the game's
+`dist/assets/home-motion/`. Keep controller and socket names unchanged. The
+runtime blends the clips with live prop transfers, and separately controls
+where Kitty approaches, turns, sits and stands. Cup placement metadata is
+measured from each character's actual seated paw socket.
+
+`author_home_motions.py` recreates these derivative projects from an original
+character source; use it only when intending to replace the edited home motion
+project. The standalone exporter preserves hand edits and the saved source.
