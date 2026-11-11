@@ -6,7 +6,7 @@
   "authoring_script": "create_studio_home.py",
   "script_sha256": "b78804b2f59f510bd6711882d25f093e39e5ff744fef528eb0a32e678758b16b",
   "export_script": "export_studio_home.py",
-  "export_sha256": "5a060e6c535ce7101c8471ab294391643c81dd8611e9b25b9b1b529ccfbac40e",
+  "export_sha256": "dd513008eee92d932edbfc41037f0d4f19014fe93e4147c85e0750176a71f1cb",
   "blender_version": "4.3.2",
   "asset_bytes": 2119564,
   "triangles": 42463,
@@ -600,6 +600,26 @@
         "z": -4.2275,
         "w": 0.68,
         "d": 1.075
+      }
+    ],
+    "floor_areas": [
+      {
+        "name": "rug",
+        "shape": "ellipse",
+        "x": 0.0,
+        "z": 0.65,
+        "rx": 1.98,
+        "rz": 1.4256,
+        "height": 0.2
+      },
+      {
+        "name": "bathroom",
+        "shape": "rectangle",
+        "x": -0.3,
+        "z": -3.67,
+        "rx": 1.125,
+        "rz": 1.25,
+        "height": 0.1865
       }
     ]
   }

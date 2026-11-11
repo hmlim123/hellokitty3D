@@ -354,3 +354,8 @@ measured from each character's actual seated paw socket.
 `author_home_motions.py` recreates these derivative projects from an original
 character source; use it only when intending to replace the edited home motion
 project. The standalone exporter preserves hand edits and the saved source.
+
+Floor support heights are also measured during the studio export. Moving the
+rug or bathroom updates `navigation.floor_areas`; the game uses these for
+Kitty’s feet and tap destination markers. There is one exported layout for
+furniture, approaches, collision footprints and supporting surfaces.
