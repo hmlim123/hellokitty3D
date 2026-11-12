@@ -5,6 +5,26 @@ flat black oval eyes, and softly fused, thumb-free rounded paws. Warm cream whit
 rose backgrounds, and gentle contrast give it a nostalgic stationery/film-color
 feel without adding grain. No external textures, add-ons or API keys are needed.
 
+## My Melody, Cinnamoroll and Kuromi
+
+The [three-friend collection](friends/README.md) contains independent editable
+Blender projects and a shared studio scene:
+
+- `friends/melody.blend` — My Melody’s pink hood, bunny ears, ribbons and paw pads.
+- `friends/cinnamoroll.blend` — long floppy ears, blue embroidered face and curled tail.
+- `friends/kuromi.blend` — charcoal jester hood, pink skull badge and soft pompoms.
+- `friends/friend_studio.blend` — all three together with the same pose timeline.
+
+Each character has six facial expressions and seven motion clips, including
+idle/blink, wave, a six-second happy dance, bow, celebration, self-hug and an
+in-place walk. Named object controls and real facial shape keys remain editable.
+Smooth plush-inspired materials need no hair add-on or external texture.
+
+[Studio preview](friends/three-friends.png) · [Expressions](friends/expressions.png)
+· [Gestures](friends/gestures.png). The [Mac export guide](friends/README.md#export-an-edited-character-on-a-mac)
+explains how to export edits into the included GLBs without rebuilding the source.
+Source/GLB checks and source hashes are recorded in `friends/verification.json`.
+
 ## Natural interactive edition · v1.9
 
 Open **`hello_kitty_natural.blend`** for the newest game source. The original,

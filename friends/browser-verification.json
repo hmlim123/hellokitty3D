@@ -1,0 +1,60 @@
+{
+  "engine": "Three.js r180",
+  "renderer": "Chromium WebGL",
+  "checks": [
+    "all three GLBs load and render",
+    "all six actual morph poses reach their authored peaks",
+    "right-eye wink independently closes while left eye stays open",
+    "exported dance root side steps exceed .28 units",
+    "exported dance hops exceed .05 units",
+    "no browser errors"
+  ],
+  "characters": [
+    {
+      "character": "melody",
+      "sha256": "bef402172a8f51a24e0a3eb6576dd8b27c82dd4ad4d86c0c24667e95c8c42916",
+      "clips": 13,
+      "expressions": [
+        "happy",
+        "wink",
+        "sleepy",
+        "surprised",
+        "shy",
+        "curious"
+      ]
+    },
+    {
+      "character": "cinnamoroll",
+      "sha256": "ad91c9c6c78df2e4ab3d9938968df39753db67b3ae683be977989f356762d2cb",
+      "clips": 13,
+      "expressions": [
+        "happy",
+        "wink",
+        "sleepy",
+        "surprised",
+        "shy",
+        "curious"
+      ]
+    },
+    {
+      "character": "kuromi",
+      "sha256": "7f4413b1cea249007788c50e845db29d2b4362863e511b7ebb0a76b74fd09b49",
+      "clips": 13,
+      "expressions": [
+        "happy",
+        "wink",
+        "sleepy",
+        "surprised",
+        "shy",
+        "curious"
+      ]
+    }
+  ],
+  "preview": {
+    "file": "dance-preview.mp4",
+    "fps": 24,
+    "frames": 144,
+    "duration_seconds": 6,
+    "rendered_from": "actual exported GLB dance clips, sampled at fixed time steps"
+  }
+}

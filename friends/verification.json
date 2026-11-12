@@ -1,0 +1,29 @@
+[
+  {
+    "character": "melody",
+    "source": "melody.blend",
+    "source_sha256": "e7d215cfdc3b3099f3899c33d7fc52c32c91a4ccb951956dd6334a0ee65361a9",
+    "triangles": 29468,
+    "bytes": 1250004,
+    "clips": 13,
+    "checks": "neutral/rest, outward ears, grounded feet, full blink/wink, facial morphs, visible dance/hops, raised cheer paws, export clips and provenance"
+  },
+  {
+    "character": "cinnamoroll",
+    "source": "cinnamoroll.blend",
+    "source_sha256": "b072190a16f20965564ca254fd4bb41479d5e35cb5f075108d4ea80bfbf69130",
+    "triangles": 20512,
+    "bytes": 1017236,
+    "clips": 13,
+    "checks": "neutral/rest, outward ears, grounded feet, full blink/wink, facial morphs, visible dance/hops, raised cheer paws, export clips and provenance"
+  },
+  {
+    "character": "kuromi",
+    "source": "kuromi.blend",
+    "source_sha256": "ab69b2f5203868ad9384e7cd83aa91cbe468341650be678b366a2e5787a4330a",
+    "triangles": 28844,
+    "bytes": 1190436,
+    "clips": 13,
+    "checks": "neutral/rest, outward ears, grounded feet, full blink/wink, facial morphs, visible dance/hops, raised cheer paws, export clips and provenance"
+  }
+]

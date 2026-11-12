@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "character": "cinnamoroll",
+  "title": "Cinnamoroll",
+  "source_file": "cinnamoroll.blend",
+  "source_sha256": "b072190a16f20965564ca254fd4bb41479d5e35cb5f075108d4ea80bfbf69130",
+  "fps": 24,
+  "clips": {
+    "idle": [
+      1,
+      97
+    ],
+    "wave": [
+      121,
+      193
+    ],
+    "dance": [
+      217,
+      361
+    ],
+    "bow": [
+      385,
+      457
+    ],
+    "celebrate": [
+      481,
+      577
+    ],
+    "cuddle": [
+      601,
+      697
+    ],
+    "walk": [
+      721,
+      817
+    ],
+    "happy": [
+      841,
+      913
+    ],
+    "wink": [
+      937,
+      985
+    ],
+    "sleepy": [
+      1009,
+      1105
+    ],
+    "surprised": [
+      1129,
+      1201
+    ],
+    "shy": [
+      1225,
+      1321
+    ],
+    "curious": [
+      1345,
+      1441
+    ]
+  },
+  "morphs": {
+    "Eye left": [
+      "Blink",
+      "SoftSmile",
+      "Sleepy",
+      "Surprise",
+      "Shy",
+      "Curious"
+    ],
+    "Eye right": [
+      "Blink",
+      "SoftSmile",
+      "Sleepy",
+      "Surprise",
+      "Shy",
+      "Curious"
+    ],
+    "Embroidered smile": [
+      "SoftSmile",
+      "Sleepy",
+      "Surprise",
+      "Shy",
+      "Curious"
+    ],
+    "Pink cheek -1": [
+      "Warmth"
+    ],
+    "Pink cheek 1": [
+      "Warmth"
+    ]
+  },
+  "bounds_y_up": {
+    "min": [
+      -1.5609506368637085,
+      0.0,
+      -0.4799997806549072
+    ],
+    "max": [
+      1.5609506368637085,
+      2.240000009536743,
+      0.5199998021125793
+    ]
+  },
+  "source_triangles": 20512,
+  "bytes": 1017236,
+  "held_item": null,
+  "author_script_sha256": "d40eb95968a114c153ad4b1e10e9e7c8829a02e795dbe11df93e96182ec94ee0",
+  "export_script_sha256": "309fcd08dd6e3bf00dfde6c006297753d27794df1eeebd258eeca44af38318c1"
+}
