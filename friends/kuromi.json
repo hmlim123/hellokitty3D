@@ -3,7 +3,7 @@
   "character": "kuromi",
   "title": "Kuromi",
   "source_file": "kuromi.blend",
-  "source_sha256": "ab69b2f5203868ad9384e7cd83aa91cbe468341650be678b366a2e5787a4330a",
+  "source_sha256": "3cf1e693d6b688443d79cea78dc4fe92952d68b6a563a77103f1daf215a93643",
   "fps": 24,
   "clips": {
     "idle": [
@@ -103,8 +103,8 @@
     ]
   },
   "source_triangles": 28844,
-  "bytes": 1190436,
+  "bytes": 1190932,
   "held_item": null,
-  "author_script_sha256": "d40eb95968a114c153ad4b1e10e9e7c8829a02e795dbe11df93e96182ec94ee0",
+  "author_script_sha256": "0c23c158868c18509a96e4fba0e41ddb0c911e736a2e4d339a806f438677e87b",
   "export_script_sha256": "309fcd08dd6e3bf00dfde6c006297753d27794df1eeebd258eeca44af38318c1"
 }

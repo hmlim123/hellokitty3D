@@ -21,6 +21,16 @@ for style in ['melody','cinnamoroll','kuromi']:
    for o in controls.objects:assert all(math.isfinite(v)for row in o.matrix_world for v in row)
    for side in ['L','R']:
     foot=bpy.data.objects['Foot '+side];floor=min((foot.matrix_world@Vector(c)).z for c in foot.bound_box);assert floor>=-.0001,(style,name,f,floor)
+ if style!='cinnamoroll':
+  assert s.get('friend_mouth_version')=='soft-stitched-smile-v2'
+  mouth=bpy.data.objects['Embroidered smile'];points=[mouth.matrix_world@v.co for v in mouth.data.vertices]
+  assert max(p.x for p in points)-min(p.x for p in points)<.165
+  for p in points:
+   surface=-.53*math.sqrt(max(.025,1-(p.x/.81)**2-((p.z-1.8)/.67)**2))-.012
+   assert -.0011<surface-p.y<.0115,(style,'floating smile',surface-p.y)
+  centers=[sum((points[i*8+j].z for j in range(8)))/8 for i in range(33)]
+  assert all(centers[i]>centers[i+1]for i in range(16))
+  assert all(centers[i]<centers[i+1]for i in range(16,32))
  pose(61)
  for name in ['Eye left','Eye right']:assert bpy.data.objects[name].data.shape_keys.key_blocks['Blink'].value>.99
  pose(961);left=bpy.data.objects['Eye left'].data.shape_keys.key_blocks;right=bpy.data.objects['Eye right'].data.shape_keys.key_blocks;assert right['Blink'].value>.99 and left['Blink'].value<.001 and right['SoftSmile'].value<.001

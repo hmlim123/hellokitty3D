@@ -81,3 +81,16 @@ The GLBs were also loaded in Three.js/Chromium. All six facial poses, independen
 winks and actual exported dance translations passed. The Blender expression and
 gesture sheets were visually reviewed. The shared studio was reopened and checked
 for linked-file or unpacked-image dependencies; it is self-contained.
+
+## Softer smiles · v2
+
+My Melody and Kuromi now have smaller, rounded U smiles with thinner, matte
+embroidery. The thread follows the curved ivory face instead of sitting away
+from it. Happy, sleepy, shy and curious mouth targets use the same soft curve;
+the surprised mouth is a smaller oval. All existing expression names, controls
+and animation ranges are retained. `natural-smiles.png` shows relaxed and happy
+close-ups. `refine_smiles.py` records and applies this targeted refinement.
+
+The intended future visitor avatar is **My Melody**, with Nancy as **Hello Kitty**.
+Their separate profiles, authenticated login and private shared visits belong to
+the game's multiplayer milestone, recorded in its production plan.

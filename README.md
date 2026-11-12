@@ -25,6 +25,10 @@ Smooth plush-inspired materials need no hair add-on or external texture.
 explains how to export edits into the included GLBs without rebuilding the source.
 Source/GLB checks and source hashes are recorded in `friends/verification.json`.
 
+My Melody and Kuromi’s v2 smiles use thinner, matte embroidery fitted to the
+face surface. [Smile close-ups](friends/natural-smiles.png) show relaxed and happy
+poses. The controls, expression names and 13-clip libraries are retained.
+
 ## Natural interactive edition · v1.9
 
 Open **`hello_kitty_natural.blend`** for the newest game source. The original,

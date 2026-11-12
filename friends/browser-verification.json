@@ -7,12 +7,13 @@
     "right-eye wink independently closes while left eye stays open",
     "exported dance root side steps exceed .28 units",
     "exported dance hops exceed .05 units",
-    "no browser errors"
+    "no browser errors",
+    "refined My Melody and Kuromi smile morphs retained after export"
   ],
   "characters": [
     {
       "character": "melody",
-      "sha256": "bef402172a8f51a24e0a3eb6576dd8b27c82dd4ad4d86c0c24667e95c8c42916",
+      "sha256": "17caaf76f6074122195adaa31876aca16b63f80b89b0189b053951b00746e48d",
       "clips": 13,
       "expressions": [
         "happy",
@@ -38,7 +39,7 @@
     },
     {
       "character": "kuromi",
-      "sha256": "7f4413b1cea249007788c50e845db29d2b4362863e511b7ebb0a76b74fd09b49",
+      "sha256": "14435dbe760aba0e0a81d55c6b98848651c514398f01c63074098b2b6a3b729a",
       "clips": 13,
       "expressions": [
         "happy",

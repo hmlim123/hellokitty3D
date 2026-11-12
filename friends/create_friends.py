@@ -141,28 +141,55 @@ def eye(name,x,z,material,slant=0,lashes=False):
  return o
 
 def mouth_curve(kind,t,wide=False):
- x=(t-.5)*(.25 if wide else .17)
- z=-.027*math.sin(math.pi*t)**2
- if wide:z=-.030*math.sin(math.pi*t*2)**2
- if kind=='SoftSmile':x*=1.16;z*=1.5
- elif kind=='Sleepy':x*=.6;z*=.35
- elif kind=='Surprise':x=.035*math.cos(t*math.tau);z=.043*math.sin(t*math.tau)-.008
- elif kind=='Shy':x*=.78;z*=.6
- elif kind=='Curious':z+=x*.2
+ if wide:
+  # Cinnamoroll keeps the original embroidered W mouth.
+  x=(t-.5)*.25;z=-.030*math.sin(math.pi*t*2)**2
+  if kind=='SoftSmile':x*=1.16;z*=1.5
+  elif kind=='Sleepy':x*=.6;z*=.35
+  elif kind=='Surprise':x=.035*math.cos(t*math.tau);z=.043*math.sin(t*math.tau)-.008
+  elif kind=='Shy':x*=.78;z*=.6
+  elif kind=='Curious':z+=x*.2
+  return x,z
+ u=2*t-1;half=.075;depth=.026
+ if kind=='SoftSmile':half*=1.12;depth*=1.18
+ elif kind=='Sleepy':half*=.78;depth*=.65
+ elif kind=='Surprise':return .026*math.cos(t*math.tau),.032*math.sin(t*math.tau)-.008
+ elif kind=='Shy':half*=.85;depth*=.72
+ x=u*half;z=depth*(u*u-1)
+ if kind=='Curious':z+=.003*u
  return x,z
 
+def smile_geometry(kind,z):
+ points=[Vector((x,0,z+dz))for x,dz in [mouth_curve(kind,i/32)for i in range(33)]]
+ verts=[];faces=[];sides=8
+ for i,p in enumerate(points):
+  tangent=(points[min(i+1,32)]-points[max(0,i-1)]).normalized();across=Vector((-tangent.z,0,tangent.x))
+  t=i/32;cap=1
+  if kind!='Surprise':
+   end=min(t,1-t)/.10
+   if end<1:cap=math.sqrt(max(.0025,1-(1-end)**2))
+  r=.006*cap
+  for j in range(sides):
+   a=j*math.tau/sides;v=p+across*(r*math.cos(a))
+   # The back of the thread is embedded slightly in the ivory face patch.
+   # Reproject every vertex, so the smile never floats off the curved cheek.
+   verts.append((v.x,front(v.x,v.z,.012)-r*(.85+math.sin(a)),v.z))
+ for i in range(32):
+  for j in range(sides):a=i*sides+j;b=i*sides+(j+1)%sides;faces.append((a,b,b+sides,a+sides))
+ faces.extend([tuple(range(sides-1,-1,-1)),tuple(32*sides+j for j in range(sides))])
+ return verts,faces
+
 def mouth(name,z,material,wide=False):
- def points(kind):
+ def make(kind,tempname):
+  if not wide:
+   verts,faces=smile_geometry(kind,z);return mesh(tempname,verts,faces,material,head if tempname==name else None)
   ps=[]
   for i in range(33):
-   x,dz=mouth_curve(kind,i/32,wide);ps.append((x,front(x,z+dz,.03),z+dz))
-  return ps
- o=tube(name,points('Basis'),.010 if wide else .009,material,head);o.shape_key_add(name='Basis')
- # Identical tube topology makes every mouth expression a real, portable morph.
- base=[v.co.copy()for v in o.data.vertices]
+   x,dz=mouth_curve(kind,i/32,True);ps.append((x,front(x,z+dz,.03),z+dz))
+  return tube(tempname,ps,.010,material,head if tempname==name else None)
+ o=make('Basis',name);o.shape_key_add(name='Basis')
  for kind in FACE_KEYS[1:]:
-  temp=tube('Temporary mouth morph',points(kind),.010 if wide else .009,material)
-  key=o.shape_key_add(name=kind)
+  temp=make(kind,'Temporary mouth morph');key=o.shape_key_add(name=kind)
   for out,v in zip(key.data,temp.data.vertices):out.co=v.co
   d=temp.data;bpy.data.objects.remove(temp,do_unlink=True);bpy.data.meshes.remove(d)
  return o
@@ -259,6 +286,7 @@ def author():
     for p in fc.keyframe_points:p.handle_left_type='AUTO_CLAMPED';p.handle_right_type='AUTO_CLAMPED'
  s.frame_start=1;s.frame_end=1441;s.render.fps=FPS;s.frame_set(1)
  s['friend_character']=style;s['friend_title']=TITLES[style];s['friend_clips']=json.dumps(CLIPS);s['friend_version']='little-friends-v1'
+ if style!='cinnamoroll':s['friend_mouth_version']='soft-stitched-smile-v2'
  s['help']='Open START HERE text. Timeline markers name each gesture/expression. Pose the CTRL_ empties. Eyes/mouth have editable shape keys. No held item by default.'
  text=bpy.data.texts.new('START HERE — '+TITLES[style]);text.write('''EDITABLE LITTLE FRIEND\n\nSpace plays the timeline. Jump to the frame ranges below to preview each motion.\nCTRL_Root moves the whole character; Body/Head/Arms/Feet/Ears pose the parts.\nEye left, Eye right and Embroidered smile expose real facial shape keys in Object Data.\nPink cheek meshes have the Warmth morph. Reset values at frame 1 for a neutral pose.\nThe STUDIO collection is separate from character export. F12 renders the lit portrait.\nRun export_friends.py to export your edited file without recreating it.\n\n'''+ '\n'.join(f'{name}: {a}–{b} at 24fps'for name,(a,b)in CLIPS.items()))
 
@@ -295,7 +323,8 @@ def build(which):
    ear('Jester ear '+side,path,[.23,.28,.19,.025],[.12,.13,.11,.025],charcoal,ctrl);ball('Jester pom '+side,(sign*.99,.01,2.95),(.10,.10,.10),charcoal,ctrl,24,16)
  for side,sign in [('left',-1),('right',1)]:eye('Eye '+side,sign*.26,1.69 if style!='cinnamoroll'else 1.65,blue if style=='cinnamoroll'else dark,slant=sign*.2 if style=='kuromi'else 0,lashes=style=='kuromi')
  if style!='cinnamoroll':ball('Button nose',(0,front(0,1.56,.035),1.56),(.052,.039,.040),pink if style=='kuromi'else yellow,head,24,16)
- mouth('Embroidered smile',1.47 if style!='cinnamoroll'else 1.46,blue if style=='cinnamoroll'else dark,style=='cinnamoroll')
+ stitch=mat('Soft mouth embroidery',(.055,.030,.040));p=stitch.node_tree.nodes.get('Principled BSDF');p.inputs['Roughness'].default_value=.85;p.inputs['Sheen Weight'].default_value=0;p.inputs['Specular IOR Level'].default_value=.12
+ mouth('Embroidered smile',1.47 if style!='cinnamoroll'else 1.46,blue if style=='cinnamoroll'else stitch,style=='cinnamoroll')
  for sign in [-1,1]:surface_disc('Pink cheek '+str(sign),sign*.40,1.51,.09,.035,pale,warm=True)
  if style=='melody':
   bow('Hood bow',(-.42,-.37,2.54),.55,ribbon,head);bow('Neck ribbon',(0,-.31,1.17),.35,ribbon,body)
