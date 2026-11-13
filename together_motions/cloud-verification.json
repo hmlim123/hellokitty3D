@@ -1,0 +1,32 @@
+{
+  "style": "cloud",
+  "contacts": {
+    "L": {
+      "max_error_world": 2.9802322387695312e-08,
+      "point_actor_local": [
+        -0.24999999451302404,
+        0.7200000109968957,
+        0.4600000102345333
+      ]
+    },
+    "R": {
+      "max_error_world": 7.300048299977713e-08,
+      "point_actor_local": [
+        0.24999999451302404,
+        0.7200000109968957,
+        0.4600000102345333
+      ]
+    }
+  },
+  "grounded_frames": 559,
+  "returned_clips": [
+    "togetherWave",
+    "togetherHighfiveL",
+    "togetherHighfiveR",
+    "togetherCelebrate",
+    "togetherStir",
+    "togetherDecorate",
+    "togetherPresent"
+  ],
+  "preserved_original_clips": 20
+}

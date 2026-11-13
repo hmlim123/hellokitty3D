@@ -1,0 +1,4478 @@
+[
+  {
+    "style": "classic",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "classic",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "cloud",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "cloud",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "witch",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "witch",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "baby",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "baby",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "kitten",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "kitten",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "bunny",
+    "kitty_hand": "R",
+    "melody_hand": "L",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03612860292196274,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.038870856165885925,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.042448729276657104,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04672966152429581,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.05157933384180069,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.05685985088348389,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.06242901831865311,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.06813905388116837,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.07383690774440765,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.07933231070637703,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.08449403196573257,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.08915838599205017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.09315635543316603,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.09631781652569771,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.0666377916932106,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.10693411924876273,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.10731113678775728,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.10733644641004503,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.10702002653852105,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.10637365910224617,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.10541022894904017,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.10414422955363989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.10259160911664367,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.10076958872377872,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.09869646560400724,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.09639199636876583,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.09387657418847084,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.09117190539836884,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.08830043487250805,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.08528520353138447,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.08214999549090862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.07891943119466305,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.07560566067695618,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.07223847508430481,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.06885074079036713,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.06546805053949356,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.06211588531732559,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.058820031583309174,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.055605463683605194,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.052497416734695435,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.04952060431241989,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04669952392578125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.04405812919139862,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.04162003844976425,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03940822184085846,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03744535148143768,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.03575342893600464,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  },
+  {
+    "style": "bunny",
+    "kitty_hand": "L",
+    "melody_hand": "R",
+    "anchor_separation": 0.84,
+    "samples": [
+      {
+        "frame_offset": 0,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 1,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 2,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 3,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 4,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 5,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 6,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 7,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 8,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 9,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 10,
+        "front_plane_gap": 0.03567212074995041,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 11,
+        "front_plane_gap": 0.03712446987628937,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 12,
+        "front_plane_gap": 0.03869831562042236,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 13,
+        "front_plane_gap": 0.04038170725107193,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 14,
+        "front_plane_gap": 0.042162299156188965,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 15,
+        "front_plane_gap": 0.044025927782058716,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 16,
+        "front_plane_gap": 0.04595617949962616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 17,
+        "front_plane_gap": 0.04793330281972885,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 18,
+        "front_plane_gap": 0.04993505775928497,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 19,
+        "front_plane_gap": 0.051916275173425674,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 20,
+        "front_plane_gap": 0.0538589283823967,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 21,
+        "front_plane_gap": 0.055746834725141525,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 22,
+        "front_plane_gap": 0.05755060911178589,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 23,
+        "front_plane_gap": 0.05924161523580551,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 24,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 25,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 26,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 27,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 28,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 29,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 30,
+        "front_plane_gap": 0.03141656517982483,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 31,
+        "front_plane_gap": 0.06869405508041382,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 32,
+        "front_plane_gap": 0.06932276114821434,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 33,
+        "front_plane_gap": 0.06979910656809807,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 34,
+        "front_plane_gap": 0.07011556625366211,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 35,
+        "front_plane_gap": 0.07027492299675941,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 36,
+        "front_plane_gap": 0.07027706876397133,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 37,
+        "front_plane_gap": 0.07012270763516426,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 38,
+        "front_plane_gap": 0.06981382519006729,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 39,
+        "front_plane_gap": 0.06935342401266098,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 40,
+        "front_plane_gap": 0.06874512508511543,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 41,
+        "front_plane_gap": 0.06799421086907387,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 42,
+        "front_plane_gap": 0.06710619479417801,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 43,
+        "front_plane_gap": 0.06608793884515762,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 44,
+        "front_plane_gap": 0.06494717299938202,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 45,
+        "front_plane_gap": 0.06369228661060333,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 46,
+        "front_plane_gap": 0.06233260780572891,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 47,
+        "front_plane_gap": 0.060874126851558685,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 48,
+        "front_plane_gap": 0.059317149221897125,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 49,
+        "front_plane_gap": 0.05768703669309616,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 50,
+        "front_plane_gap": 0.055995672941207886,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 51,
+        "front_plane_gap": 0.05425547808408737,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 52,
+        "front_plane_gap": 0.052479229867458344,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 53,
+        "front_plane_gap": 0.05068013817071915,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 54,
+        "front_plane_gap": 0.04887140542268753,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 55,
+        "front_plane_gap": 0.047066472470760345,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 56,
+        "front_plane_gap": 0.045278869569301605,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 57,
+        "front_plane_gap": 0.04352197051048279,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 58,
+        "front_plane_gap": 0.0418093204498291,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 59,
+        "front_plane_gap": 0.040153779089450836,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 60,
+        "front_plane_gap": 0.03856830298900604,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 61,
+        "front_plane_gap": 0.03706533461809158,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 62,
+        "front_plane_gap": 0.035656750202178955,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 63,
+        "front_plane_gap": 0.034354135394096375,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 64,
+        "front_plane_gap": 0.03316386044025421,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 65,
+        "front_plane_gap": 0.03209105134010315,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 66,
+        "front_plane_gap": 0.031144045293331146,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 67,
+        "front_plane_gap": 0.03032992035150528,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 68,
+        "front_plane_gap": 0.02965512126684189,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 69,
+        "front_plane_gap": 0.029124803841114044,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 70,
+        "front_plane_gap": 0.028743013739585876,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 71,
+        "front_plane_gap": 0.028512760996818542,
+        "intersections": 0
+      },
+      {
+        "frame_offset": 72,
+        "front_plane_gap": 0.028435811400413513,
+        "intersections": 0
+      }
+    ]
+  }
+]
